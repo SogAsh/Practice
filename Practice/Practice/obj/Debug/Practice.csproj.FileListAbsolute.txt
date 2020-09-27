@@ -1,0 +1,7 @@
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\Practice.exe.config
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\Practice.exe
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\Practice.pdb
+E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
+E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.exe
+E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.pdb
