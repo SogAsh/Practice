@@ -8,7 +8,7 @@ namespace Practice
 {
     interface IShop //Уроки C# (C sharp) | #22 - Интерфейсы
     {
-         string Name { get; set; } //нет реализации и модификаторов
+        string Name { get; set; } //нет реализации и модификаторов
         void Print(); //нет реализации и модификаторов
     }
 }

@@ -17,7 +17,7 @@ namespace Practice
             Print();
         }
 
-        public People(string name, int age) //конструктор
+        public People(string name, int age) //конструктор. При инициализации объекта класса мы сразу можем
         {
             this.name = name; //Уроки C# (C sharp) | #16 - Указатель this
             this.age = age;

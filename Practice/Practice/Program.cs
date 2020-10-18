@@ -10,10 +10,26 @@ namespace Practice
             //Уроки C# (C sharp) | #4 - Переменные. Типы переменных
             int num = 10; //может быть с "-"
             uint num1 = 10; //только "положительный "+" int
-            float num2 = 1.39f;
-            bool num3 = true;
+
+            double num2 = 34.54; //большая точность чем float
+            float num3 = 1.39f;
+
+            bool num4 = true;
+
             string stringVal = "er";
-            char num4 = 'A';
+            char num5 = 'A';
+
+            //преобразование типов
+            num2 = num; //double = int
+            num = (int)(num2); //int = double
+
+            float d = (float)(num2); //float = double
+
+            long e = 30;
+
+            byte a = 4; // 0 до 255
+            byte b = (byte)(a + 3);
+            short c = (short)(a + 3);
 
             Console.WriteLine("Hello\nEveryone" + "\n" + num2 + "\n" + num3 + "\n" + num4 + "\n" + stringVal);
         }
@@ -50,19 +66,22 @@ namespace Practice
             Console.WriteLine("How old are you");
             num4 = Convert.ToDouble(Console.ReadLine());
 
-            if (num4 >= 18)
+            if (num4 >= 64)
+            {
+                Console.WriteLine("You are too older than 63");
+                return; //вылетаю из метода
+            }
+            else if (num4 >= 18)
             {
                 Console.WriteLine("You are older than 18");
-            }
-            else if (num4 >= 64)
-            {
-                Console.WriteLine("You are too older than 18");
+                //выход из области видимости {}
             }
             else
             {
                 Console.WriteLine("You are younger than 18");
             }
 
+            Console.WriteLine("Test");
             Console.ReadKey();
         }
 
@@ -268,6 +287,22 @@ namespace Practice
             }
         }
 
+        public static void Addition(params int[] numbers)
+        {
+            int result = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                result += numbers[i];
+            }
+            Console.WriteLine(result);
+        }
+
+        public static void RegularExpression()
+        {
+            ForRegularExpression expression = new ForRegularExpression();
+            expression.RegularExpressionMethod();
+        }
+
         private static void Main(string[] args)
         {
             //Method0_0()
@@ -290,9 +325,9 @@ namespace Practice
             //CatAndDog.MethodCatAndDog(); //Уроки C# (C sharp) | #14 - Создание классов (Classes)
 
             //People man = new People(); //Уроки C# (C sharp) | #15 - Конструкторы, а также static
-            //People woman = new People("Klara", 25);
             //man.last_name = "Ivanov";
             //Console.WriteLine("Default constructor - last_name " + man.last_name);
+            //People woman = new People("Klara", 25);
 
             //Уроки C# (C sharp) | #17 - Аксессоры get и set
             //Univer Alex = new Univer();
@@ -370,7 +405,31 @@ namespace Practice
             //one.name = "Fant";
             //Console.WriteLine(one.name);
 
-            Console.ReadKey();
+            //------------------------------
+
+            //TestClass.str = "creep"; //Вызов статической переменной без создание объекта класса
+            //TestClass2.Test2(); //Вызов статического метода без создание объекта класса
+
+            //Addition(new[] { 1, 2 });
+            //Addition(2, 3);
+            //Addition();
+
+            //RegularExpression();
+
+            Byke newByke = new Byke();
+            newByke.Print();
+            newByke.byke.name = "Hamer";
+           
+            NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
+            newByke.Method1(newNewByke);
+
+
+            FreePracties free = new FreePracties();
+            free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
+            //т.е. мы кладем туда метод void PrintBook()???
+
+
+            //Console.ReadKey();
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    public interface IBook
+    public interface IByke
     {
-        void PrintBook(); //нет реализации и модификаторов
+        string name { get; set; }
+        void Print();
     }
 }

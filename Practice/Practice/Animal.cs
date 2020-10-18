@@ -11,6 +11,7 @@ namespace Practice
 
         public void Print()
         {
+            size = "wer";
             Console.WriteLine("Print() name " + name);
             Console.WriteLine("Print() age " + age);
             Console.WriteLine("Print() size " + size);

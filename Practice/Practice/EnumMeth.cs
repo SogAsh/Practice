@@ -17,7 +17,7 @@ namespace Practice //Уроки C# (C sharp) | #24 - Перечисления (e
     {
         public MyBreed breed;
          
-        public EnumMeth(MyBreed breed)
+        public EnumMeth (MyBreed breed)
         {
             this.breed = breed;
         }

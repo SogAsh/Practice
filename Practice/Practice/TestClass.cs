@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    public interface IBook
+    public class TestClass
     {
-        void PrintBook(); //нет реализации и модификаторов
+
     }
+
 }

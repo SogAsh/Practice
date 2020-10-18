@@ -15,11 +15,14 @@ namespace Practice
             Console.WriteLine("cat.age " + cat.age);
             cat.Print();
             Animal.count++;
-
+            
             Animal dog = new Animal(); //объект класса Animal создается заново
             //с изначальными значениями переменных
             Animal.count++;
             Console.WriteLine(Animal.count);
+
+            CatAndDog catAndDog = new CatAndDog();
+            catAndDog.size = "10";
         }
     }
 }
