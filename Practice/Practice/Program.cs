@@ -467,17 +467,114 @@ namespace Practice
 
             //RegularExpression();
 
-            Byke newByke = new Byke();
-            newByke.Print();
-            newByke.byke.name = "Hamer";
+            //Byke newByke = new Byke();
+            //newByke.Print();
+            //newByke.byke.name = "Hamer";
            
-            NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
-            newByke.Method1(newNewByke);
+            //NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
+            //newByke.Method1(newNewByke);
 
 
-            FreePracties free = new FreePracties();
-            free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
+            //FreePracties free = new FreePracties();
+            //free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
             //т.е. мы кладем туда метод void PrintBook()???
+
+            //ulearn Високосный год https://ulearn.me/course/basicprogramming/Visokosnyy_god_4c161b1e-2637-447b-adfd-14647bf659ad?autoplay=true
+            //LeapYear LeapYear = new LeapYear();
+            //Console.WriteLine(LeapYear.IsLeapYear(2014));
+            //Console.WriteLine(LeapYear.IsLeapYear(1999));
+            //Console.WriteLine(LeapYear.IsLeapYear(8992));
+            //Console.WriteLine(LeapYear.IsLeapYear(1));
+            //Console.WriteLine(LeapYear.IsLeapYear(14));
+            //Console.WriteLine(LeapYear.IsLeapYear(400));
+            //Console.WriteLine(LeapYear.IsLeapYear(600));
+            //Console.WriteLine(LeapYear.IsLeapYear(3200));
+
+            //ulearn Сравнение чисел с плавающей точкой https://ulearn.me/course/basicprogramming/Sravnenie_chisel_s_plavayushchey_tochkoy_1e844dc5-c026-4acc-b28f-086a2e7c6f8e
+            // в бинарном виде 0.1 представляется бесконечной дробью 0.00011001100..., в типах данных float и double хранится только начало этой дроби, поэтому число 0.1 представляется с погрешностью. 
+            //double x = 1.0 / 10;  double sum = 0;
+            //for (int i = 0; i < 10; i++) sum += x;
+            //Console.WriteLine(Math.Abs(sum - 1) < 1e-9); //Здесь мы проверяем, что числа равны не в точности, но что модуль их разности меньше некоторого маленького числа. Всегда используйте такую конструкцию при сравнении чисел с плавающей точкой.
+
+            //ulearn Ход ферзя https://ulearn.me/course/basicprogramming/Khod_ferzya_eb11dfb6-5629-4d13-819b-6411b9f93df6?autoplay=true
+            //TheCourseOfQueen TheCourseOfQueen = new TheCourseOfQueen();
+            //TheCourseOfQueen.TestMove("a1", "d4");
+            //TheCourseOfQueen.TestMove("f4", "e7");
+            //TheCourseOfQueen.TestMove("a1", "a4");
+            //TheCourseOfQueen.TestMove("a1", "a1");
+
+            //ulearn Среднее трех https://ulearn.me/course/basicprogramming/Srednee_trekh_937c4e64-7144-4f52-a75d-4bdc95bbde72?autoplay=true
+            //AverageOfThree AverageOfThree = new AverageOfThree();
+            //Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
+            //Console.WriteLine(AverageOfThree.MiddleOf(12, 12, 11)); // => 12
+            //Console.WriteLine(AverageOfThree.MiddleOf(1, 1, 1)); // => 1
+            //Console.WriteLine(AverageOfThree.MiddleOf(2, 3, 2)); //2
+            //Console.WriteLine(AverageOfThree.MiddleOf(8, 8, 8)); //8
+            //Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 1)); //1
+            //Console.WriteLine(AverageOfThree.MiddleOf(47, 15, 19)); //19
+            //Console.WriteLine(AverageOfThree.MiddleOf(11, 97, 97)); //97
+
+            //ulearn Управление роботом https://ulearn.me/course/basicprogramming/Upravlenie_robotom_50ac4fc7-a6e1-4c4e-8c61-ecc75aeb912e
+            //RobotManage RobotManage = new RobotManage();
+            //RobotManage.ShouldFire(true, "boss", 70);
+            //RobotManage.ShouldFire2(true, "boss", 70);
+
+            //ulearn В поисках степени двойки https://ulearn.me/course/basicprogramming/V_poiskakh_stepeni_dvoyki_4158c9a6-a71d-4015-a283-def12be0055e
+            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(2)); // => 4
+            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(15)); // => 16
+            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(-2)); // => 1
+            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(-100));
+            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(100));
+
+            //ulearn Убрать пробелы https://ulearn.me/course/basicprogramming/Ubrat_probely_9a15ebd5-0616-4a18-b842-e63e2c3c21fa
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("a"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" b"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" cd"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" efg"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" text"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" two words"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("  two spaces"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("	tabs"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("		two	tabs"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("                             many spaces"));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("               "));
+            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("\n\r line breaks are spaces too"));
+
+            //ulearn Рамочка https://ulearn.me/course/basicprogramming/Ramochka_6923aa65-95e0-4b5e-a98d-b286fd0b2153
+            //Frame.WriteTextWithBorder("Menu:");
+            //Frame.WriteTextWithBorder("");
+            //Frame.WriteTextWithBorder(" ");
+            //Frame.WriteTextWithBorder("Game Over!");
+            //Frame.WriteTextWithBorder("Select level:");
+
+            //ulearn Шахматная доска https://ulearn.me/course/basicprogramming/_Shakhmatnaya_doska_8e561342-9f4b-411d-bb9b-741a3677f696
+            //Chess.WriteBoard(8);
+            //Chess.WriteBoard(1);
+            //Chess.WriteBoard(2);
+            //Chess.WriteBoard(3);
+            //Chess.WriteBoard(10);
+
+            //ulearn Четный массив https://ulearn.me/course/basicprogramming/Chetnyy_massiv_ceb81eac-069c-4d5d-87b7-ebd9b140e143?autoplay=true
+            //BlackArray.GetFirstEvenNumbers(3);
+
+            //ulearn Индекс максимума https://ulearn.me/course/basicprogramming/Indeks_maksimuma_043015a0-0b28-4435-8079-21e4ca8e6526
+            //double[] a = { 1, 9, 9, 8, 9, 2, 2 };
+            //double [] b = { 1, 2, 46, 14, 64, 64 };
+            //Console.WriteLine(MaximumIndex.MaxIndex(a));
+            //Console.WriteLine(MaximumIndex.MaxIndex(b));
+
+            //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
+
+            //ulearn Поиск массива в массиве https://ulearn.me/course/basicprogramming/Poisk_massiva_v_massive_df8d1ca7-9aab-4816-8047-a834c6ca64d4
+            //int[] array = { 1, 6, 2, 3, 4, 3, 4 };
+            //int[] subarray = { 3, 4, 9 };
+            //SearchArrayIntoArray.FindSubarrayStartIndex(array, subarray);
+
+            //ulearn Карты Таро https://ulearn.me/course/basicprogramming/Karty_Taro_26c265ba-ea70-4aa9-bf6b-5c215576a3ab
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Wands));
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Coins));
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Cups));
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Swords));
 
 
             //Console.ReadKey();
