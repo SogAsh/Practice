@@ -5,3 +5,10 @@ E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.csprojAs
 E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
 E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.exe
 E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.pdb
+C:\StudyPlace\Practice\Practice\Practice\bin\Debug\Practice.exe.config
+C:\StudyPlace\Practice\Practice\Practice\bin\Debug\Practice.exe
+C:\StudyPlace\Practice\Practice\Practice\bin\Debug\Practice.pdb
+C:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
+C:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+C:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.exe
+C:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.pdb

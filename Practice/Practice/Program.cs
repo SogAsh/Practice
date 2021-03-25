@@ -470,7 +470,7 @@ namespace Practice
             //Byke newByke = new Byke();
             //newByke.Print();
             //newByke.byke.name = "Hamer";
-           
+
             //NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
             //newByke.Method1(newNewByke);
 
@@ -478,6 +478,86 @@ namespace Practice
             //FreePracties free = new FreePracties();
             //free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
             //т.е. мы кладем туда метод void PrintBook()???
+
+
+            //ULEARN -----------------------------------------------------------------------------------------------------------------------------------
+
+            //static void Method14() //Ошибки преобразования типов
+            //{
+            //    double pi = Math.PI;
+            //    float newPi = (float)pi;
+            //    long tenThousand = 10000L;
+            //    double tenThousandPi = newPi * tenThousand;
+            //    int roundedTenThousandPi = (int)Math.Round(tenThousandPi); //округление до ближайшего целого числа
+            //    int integerPartOfTenThousandPi = (int)tenThousandPi;
+            //    Console.WriteLine(integerPartOfTenThousandPi);
+            //    Console.WriteLine(roundedTenThousandPi);
+            //}
+
+            //Method14();
+
+            //static void Method15() //Биткоины в массы!
+            //{
+            //    double amount = 1.11;
+            //    int peopleCount = 60;
+            //    int totalMoney = (int)Math.Round(amount * peopleCount); //округление до ближайшего целого числа
+            //    Console.WriteLine(totalMoney);
+            //}
+
+            //Method15();
+
+            //static void Method16() //Преобразование строки в число
+            //{
+            //    string doubleNumber = "894376.243643";
+            //    //double number = double.Parse(doubleNumber); работает в старой студии
+            //    //Console.WriteLine(number + 1);
+            //}
+
+            //Method16();
+
+            //static void Method17() //Использование var
+            //{
+            //    double a = 5;
+            //    a += 0.5;
+            //    Console.WriteLine(a);
+            //}
+
+            //Method17();
+
+
+            //ulearn Главный вопрос Вселенной https://ulearn.me/course/basicprogramming/Glavnyy_vopros_Vselennoy_d5b59540-410f-4f6d-8f04-b5613e264bd5
+            //MainQuestionUniverse.NewPrint(MainQuestionUniverse.GetSquare(42));
+
+            //static string Method18(int a, int b, int c)
+            //{
+            //    if ((a < 0) || (a == 0 && b != 0))
+            //        return "Impossible";
+            //    else
+            //    {
+            //        if (a == 0 && b == 0)
+            //            return c.ToString();
+            //        else
+            //            return (-b / (2 * a)).ToString();
+            //    }
+            //}
+
+            //Console.WriteLine(Method18(1, 2, 3));
+            //Console.WriteLine(Method18(0, 3, 2));
+            //Console.WriteLine(Method18(1, -2, -3));
+            //Console.WriteLine(Method18(5, 2, 1));
+            //Console.WriteLine(Method18(4, 3, 2));
+            //Console.WriteLine(Method18(0, 4, 5));
+
+            // А в этих случаях решение существует:
+            //Console.WriteLine(Method18(0, 0, 2) != "Impossible");
+            //Console.WriteLine(Method18(0, 0, 0) != "Impossible");
+
+            //--------------------------------------------------------------------------------------------------------------------------------------
+
+            //ulearn Добрый работодатель https://ulearn.me/course/basicprogramming/Dobryy_rabotodatel__f6559650-b3af-4e5e-be84-941fb21bc2ac
+            //Console.WriteLine(KindEmploer.GetGreetingMessage("Student", 10.01));
+            //Console.WriteLine(KindEmploer.GetGreetingMessage("Bill Gates", 10000000.5));
+            //Console.WriteLine(KindEmploer.GetGreetingMessage("Steve Jobs", 1));
 
             //ulearn Високосный год https://ulearn.me/course/basicprogramming/Visokosnyy_god_4c161b1e-2637-447b-adfd-14647bf659ad?autoplay=true
             //LeapYear LeapYear = new LeapYear();
@@ -571,13 +651,13 @@ namespace Practice
             //SearchArrayIntoArray.FindSubarrayStartIndex(array, subarray);
 
             //ulearn Карты Таро https://ulearn.me/course/basicprogramming/Karty_Taro_26c265ba-ea70-4aa9-bf6b-5c215576a3ab
-            Console.WriteLine(Taro.GetSuit(Taro.Suits.Wands));
-            Console.WriteLine(Taro.GetSuit(Taro.Suits.Coins));
-            Console.WriteLine(Taro.GetSuit(Taro.Suits.Cups));
-            Console.WriteLine(Taro.GetSuit(Taro.Suits.Swords));
+            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Wands));
+            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Coins));
+            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Cups));
+            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Swords));
 
 
-            //Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
