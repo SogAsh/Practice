@@ -55,6 +55,7 @@
     <Compile Include="Chess.cs" />
     <Compile Include="KindEmploer.cs" />
     <Compile Include="MainQuestionUniverse.cs" />
+    <Compile Include="MethodsWanted.cs" />
     <Compile Include="TheCourseOfQueen.cs" />
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="EnumMeth.cs" />

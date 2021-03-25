@@ -559,6 +559,11 @@ namespace Practice
             //Console.WriteLine(KindEmploer.GetGreetingMessage("Bill Gates", 10000000.5));
             //Console.WriteLine(KindEmploer.GetGreetingMessage("Steve Jobs", 1));
 
+            //ulearn Разыскиваются методы! https://ulearn.me/Course/BasicProgramming/Razyskivayutsya_metody__d8578c7f-d7e2-4ce5-a3be-e6e32d9ac63e
+            //Console.WriteLine(MethodsWanted.GetLastHalf("I love CSharp!"));
+            //Console.WriteLine(MethodsWanted.GetLastHalf("1234567890"));
+            //Console.WriteLine(MethodsWanted.GetLastHalf("до ре ми фа соль ля си"));
+
             //ulearn Високосный год https://ulearn.me/course/basicprogramming/Visokosnyy_god_4c161b1e-2637-447b-adfd-14647bf659ad?autoplay=true
             //LeapYear LeapYear = new LeapYear();
             //Console.WriteLine(LeapYear.IsLeapYear(2014));
