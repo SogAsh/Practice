@@ -8,21 +8,21 @@ namespace Practice
 {
     public class FreePracties : IBook
     {
-        public void Practies()
-        {
-            return parsedNumbers.Any()
-                ? parsedNumbers.Sum() : 0;
+        //public void Practies()
+        //{
+        //    return parsedNumbers.Any()
+        //        ? parsedNumbers.Sum() : 0;
 
-            //равнозначно нижеследующему
-            if (parsedNumbers.Any())
-            {
-                return parsedNumbers.Sum();
-            }
-            else
-            {
-                return 0;
-            }
-        }
+        //    //равнозначно нижеследующему
+        //    if (parsedNumbers.Any())
+        //    {
+        //        return parsedNumbers.Sum();
+        //    }
+        //    else
+        //    {
+        //        return 0;
+        //    }
+        //}
 
         //-------------------------------------------------------------------------------------------------------
         public class Print

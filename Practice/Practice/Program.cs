@@ -5,11 +5,15 @@ namespace Practice
 {
     internal class Program
     {
+
         public static void Method0_0()
         {
             //Уроки C# (C sharp) | #4 - Переменные. Типы переменных
+
             int num = 10; //может быть с "-"
             uint num1 = 10; //только "положительный "+" int
+
+
 
             double num2 = 34.54; //большая точность чем float
             float num3 = 1.39f;
@@ -34,6 +38,50 @@ namespace Practice
             Console.WriteLine("Hello\nEveryone" + "\n" + num2 + "\n" + num3 + "\n" + num4 + "\n" + stringVal);
         }
 
+        public static void Method101()
+        {
+            int[] array = new int[5];
+            array[0] = 1;
+            array[1] = 2;
+            array[2] = 3;
+            array[3] = 4;
+            array[4] = 5;
+
+            foreach (var i in array)
+            {
+
+            }
+
+
+            foreach (var t in array)
+            {
+                Console.WriteLine(t);
+            }
+        }
+
+
+        public static void Method100()
+        {
+            Console.WriteLine("Enter first num: ");
+            var num = Convert.ToInt32(Console.ReadLine());
+
+            var exception = new IndexOutOfRangeException();
+            Console.WriteLine(Environment.NewLine + "Enter second num: ");
+            
+            int num_1 = Convert.ToInt32(Console.ReadLine());
+            int sum = num * num_1;
+
+            Console.WriteLine(sum);
+        }
+
+        enum MyEnum
+        {
+            TEST1,
+            TEST2,
+            TEST3,
+            TEST4
+        }
+
         public static void Method0()
         {
             int num, num_1;
@@ -42,6 +90,7 @@ namespace Practice
             num = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("\nEnter second num: ");
+
             num_1 = Convert.ToInt32(Console.ReadLine());
             int sum = num * num_1;
 
@@ -160,12 +209,14 @@ namespace Practice
 
         public static void Method6() //Уроки C# (C sharp) | #9 - Массивы
         {
+            // https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-and-operator-
             int[] array = new int[5];
             array[0] = 1;
             array[1] = 2;
             array[2] = 3;
             array[3] = 4;
             array[4] = 5;
+
 
             for (int i = 0; i < array.Length; i++)
             {
