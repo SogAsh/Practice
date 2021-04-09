@@ -661,6 +661,33 @@ namespace Practice
             //Console.WriteLine(Taro.GetSuit(Taro.Suits.Cups));
             //Console.WriteLine(Taro.GetSuit(Taro.Suits.Swords));
 
+            //FluentAPI Более сложный случай https://ulearn.me/course/cs2/Bolee_slozhnyy_sluchay_df079b25-8952-4d6f-976b-f92b17c93005
+            //var spectacle = new Spectacle()
+            //    .Say("Привет мир!")
+            //    .Delay(TimeSpan.FromSeconds(1))
+            //    .UntilKeyPressed(s =>
+            //        s.Say("тра-ля-ля")
+            //            .Delay(TimeSpan.FromMilliseconds(500))
+            //            .Say("тру-лю-лю")
+            //            .Delay(TimeSpan.FromMilliseconds(500))
+            //    )
+            //    .Say("Пока-пока!");
+
+            //spectacle.Play();
+
+            //FluentAPI Расширяемость Fluent-Интерфейсов https://ulearn.me/course/cs2/Rasshiryaemost_Fluent_Interfeysov_30c4a153-5510-4015-ab90-98e259b8da7f
+            var newSpectacle = new NewSpectacle()
+                .Say("Привет мир!")
+                .Delay(TimeSpan.FromSeconds(1))
+                .UntilKeyPressed(s =>
+                    s.TypeText("тра-ля-ля")
+                    .TypeText("тру-лю-лю")
+                )
+                .Say("Пока-пока!");
+
+            newSpectacle.Play();
+
+
 
             Console.ReadKey();
         }
