@@ -566,7 +566,7 @@ namespace Practice
 
             //ulearn Високосный год https://ulearn.me/course/basicprogramming/Visokosnyy_god_4c161b1e-2637-447b-adfd-14647bf659ad?autoplay=true
             //LeapYear LeapYear = new LeapYear();
-            //Console.WriteLine(LeapYear.IsLeapYear(2014));
+            //Console.WriteLine(LeapYear.IsLeapYear(1700));
             //Console.WriteLine(LeapYear.IsLeapYear(1999));
             //Console.WriteLine(LeapYear.IsLeapYear(8992));
             //Console.WriteLine(LeapYear.IsLeapYear(1));
@@ -589,7 +589,7 @@ namespace Practice
             //TheCourseOfQueen.TestMove("a1", "a1");
 
             //ulearn Среднее трех https://ulearn.me/course/basicprogramming/Srednee_trekh_937c4e64-7144-4f52-a75d-4bdc95bbde72?autoplay=true
-            //AverageOfThree AverageOfThree = new AverageOfThree();
+            AverageOfThree AverageOfThree = new AverageOfThree();
             //Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
             //Console.WriteLine(AverageOfThree.MiddleOf(12, 12, 11)); // => 12
             //Console.WriteLine(AverageOfThree.MiddleOf(1, 1, 1)); // => 1
@@ -676,16 +676,16 @@ namespace Practice
             //spectacle.Play();
 
             //FluentAPI Расширяемость Fluent-Интерфейсов https://ulearn.me/course/cs2/Rasshiryaemost_Fluent_Interfeysov_30c4a153-5510-4015-ab90-98e259b8da7f
-            var newSpectacle = new NewSpectacle()
-                .Say("Привет мир!")
-                .Delay(TimeSpan.FromSeconds(1))
-                .UntilKeyPressed(s =>
-                    s.TypeText("тра-ля-ля")
-                    .TypeText("тру-лю-лю")
-                )
-                .Say("Пока-пока!");
+            //var newSpectacle = new NewSpectacle()
+            //    .Say("Привет мир!")
+            //    .Delay(TimeSpan.FromSeconds(1))
+            //    .UntilKeyPressed(s =>
+            //        s.TypeText("тра-ля-ля")
+            //        .TypeText("тру-лю-лю")
+            //    )
+            //    .Say("Пока-пока!");
 
-            newSpectacle.Play();
+            //newSpectacle.Play();
 
 
 

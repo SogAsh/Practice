@@ -10,7 +10,20 @@ namespace Practice
     {
         public static bool IsLeapYear(int year)
         {
-            return year % 400 == 0 || year % 100 != 0 && year % 4 == 0;
+            var leapyear = year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
+
+            return leapyear;
+
+            /*
+            2014 
+            1999
+            8992
+            1
+            14
+            400
+            600
+            3200
+            */
         }
     }
 }

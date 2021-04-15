@@ -54,11 +54,11 @@
     <Compile Include="CatAndDog.cs" />
     <Compile Include="Chess.cs" />
     <Compile Include="KindEmploer.cs" />
+    <Compile Include="LeapYear.cs" />
     <Compile Include="MainQuestionUniverse.cs" />
     <Compile Include="MethodsWanted.cs" />
     <Compile Include="NewSpectacle.cs" />
     <Compile Include="Spectacle.cs" />
-    <Compile Include="TheCourseOfQueen.cs" />
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="EnumMeth.cs" />
     <Compile Include="ForAbstractExample.cs" />
@@ -71,7 +71,6 @@
     <Compile Include="IBook.cs" />
     <Compile Include="IByke.cs" />
     <Compile Include="IShop.cs" />
-    <Compile Include="LeapYear.cs" />
     <Compile Include="MarvelHero.cs" />
     <Compile Include="MaximumIndex.cs" />
     <Compile Include="OverloadMeth.cs" />
@@ -84,6 +83,7 @@
     <Compile Include="StructureClass.cs" />
     <Compile Include="Taro.cs" />
     <Compile Include="TestClass.cs" />
+    <Compile Include="TheCourseOfQueen.cs" />
     <Compile Include="Univer.cs" />
     <Compile Include="Virtual2.cs" />
     <Compile Include="Virtual.cs" />
