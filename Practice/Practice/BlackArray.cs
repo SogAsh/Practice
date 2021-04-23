@@ -8,13 +8,21 @@ namespace Practice
 {
     public class BlackArray
     {
-        public static int[] GetFirstEvenNumbers(int count)
+        public static int[] GetFirstEvenNumbers(int count) //3
         {
             int[] array = new int[count];
-            for (int i = 1; i <= count; i++)
+            int b = 0;
+            int c = 0;
+
+            for (int i = 0; i < array.Length; i++) //0 1 2
             {
-                array[i - 1] = i * 2;
+                if (i % 2 == 0) b = array[i] = c + 2; //2
+                
+                else c = array[i] = b + 2; //6
+
+                Console.WriteLine(array[i]);
             }
+            
             return array;
         }
     }

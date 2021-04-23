@@ -589,7 +589,7 @@ namespace Practice
             //TheCourseOfQueen.TestMove("a1", "a1");
 
             //ulearn Среднее трех https://ulearn.me/course/basicprogramming/Srednee_trekh_937c4e64-7144-4f52-a75d-4bdc95bbde72?autoplay=true
-            AverageOfThree AverageOfThree = new AverageOfThree();
+            //AverageOfThree AverageOfThree = new AverageOfThree();
             //Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
             //Console.WriteLine(AverageOfThree.MiddleOf(12, 12, 11)); // => 12
             //Console.WriteLine(AverageOfThree.MiddleOf(1, 1, 1)); // => 1
@@ -641,14 +641,20 @@ namespace Practice
 
             //ulearn Четный массив https://ulearn.me/course/basicprogramming/Chetnyy_massiv_ceb81eac-069c-4d5d-87b7-ebd9b140e143?autoplay=true
             //BlackArray.GetFirstEvenNumbers(3);
+            //BlackArray.GetFirstEvenNumbers(2);
+            //BlackArray.GetFirstEvenNumbers(4);
 
             //ulearn Индекс максимума https://ulearn.me/course/basicprogramming/Indeks_maksimuma_043015a0-0b28-4435-8079-21e4ca8e6526
             //double[] a = { 1, 9, 9, 8, 9, 2, 2 };
-            //double [] b = { 1, 2, 46, 14, 64, 64 };
+            //double[] b = { 1, 2, 46, 14, 64, 64 };
+            //double[] d = { 1, 2, 3 };
             //Console.WriteLine(MaximumIndex.MaxIndex(a));
             //Console.WriteLine(MaximumIndex.MaxIndex(b));
+            //Console.WriteLine(MaximumIndex.MaxIndex(d));
 
             //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
+            //int[] a = { 1, 2, 1, 1 };
+            //Console.WriteLine(Count.GetElementCount(a, 1));
 
             //ulearn Поиск массива в массиве https://ulearn.me/course/basicprogramming/Poisk_massiva_v_massive_df8d1ca7-9aab-4816-8047-a834c6ca64d4
             //int[] array = { 1, 6, 2, 3, 4, 3, 4 };
