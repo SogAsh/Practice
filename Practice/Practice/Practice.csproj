@@ -62,6 +62,8 @@
     <Compile Include="MaximumIndex.cs" />
     <Compile Include="MethodsWanted.cs" />
     <Compile Include="NewSpectacle.cs" />
+    <Compile Include="NullOrNotNull.cs" />
+    <Compile Include="RaiseAnArayToADegree.cs" />
     <Compile Include="Spectacle.cs" />
     <Compile Include="EnumMeth.cs" />
     <Compile Include="ForAbstractExample.cs" />

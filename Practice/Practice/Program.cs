@@ -693,7 +693,25 @@ namespace Practice
 
             //newSpectacle.Play();
 
+            //ulearn Null или не Null? https://ulearn.me/course/basicprogramming/Null_ili_ne_Null__05581efc-0377-438e-b6c6-90778d3c8922
+            //Console.WriteLine(NullOrNotNull.CheckFirstElement(null));
+            //Console.WriteLine(NullOrNotNull.CheckFirstElement(new int[0]));
+            //Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] { 1 }));
+            //Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] { 0 }));
 
+            //ulearn Возвести массив в степень https://ulearn.me/course/basicprogramming/Vozvesti_massiv_v_stepen__e3e45ec7-7bd0-4284-8ca1-0fbcb2fa0c21
+            var arrayToPower = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            // Метод PrintArray уже написан за вас
+            RaiseAnArayToADegree.PrintArray(GetPoweredArray(arrayToPower, 1));
+
+            // если вы будете менять исходный массив, то следующие два теста сработают неверно:
+            RaiseAnArayToADegree.PrintArray(GetPoweredArray(arrayToPower, 2));
+            RaiseAnArayToADegree.PrintArray(GetPoweredArray(arrayToPower, 3));
+
+            // не забывайте про частные случаи:
+            RaiseAnArayToADegree.PrintArray(GetPoweredArray(new int[0], 1));
+            RaiseAnArayToADegree.PrintArray(GetPoweredArray(new[] { 42 }, 0));
 
             Console.ReadKey();
         }

@@ -18,7 +18,18 @@ namespace Practice
 
         public static string GetSuit(Suits suit)
         {
+            //if (suit == Suits.Wands) return "жезлов";
+            //else if (suit == Suits.Coins) return "монет";
+            //else if (suit == Suits.Cups) return "кубков";
+            //else return "мечей";
+
+            /*
+             * enum можно конвертировать в int!
+               (int)Suits.Wands равен нулю, (int)Suits.Coins — единице и так далее.
+             */
+
             return new[] { "жезлов", "монет", "кубков", "мечей" }[(int)suit];
+
         }
     }
 }
