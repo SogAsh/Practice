@@ -15,7 +15,7 @@ C:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.pdb
 D:\StudyPlace\Practice\Practice\Practice\bin\Debug\Practice.exe.config
 D:\StudyPlace\Practice\Practice\Practice\bin\Debug\Practice.exe
 D:\StudyPlace\Practice\Practice\Practice\bin\Debug\Practice.pdb
-D:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
 D:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
 D:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.exe
 D:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.pdb
+D:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csprojAssemblyReference.cache

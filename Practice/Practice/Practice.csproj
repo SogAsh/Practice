@@ -48,6 +48,7 @@
     <Compile Include="AbstractClass.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="AverageOfThree.cs" />
+    <Compile Include="BenfordStatistics.cs" />
     <Compile Include="BlackArray.cs" />
     <Compile Include="Byke.cs" />
     <Compile Include="Cars.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="NewSpectacle.cs" />
     <Compile Include="NullOrNotNull.cs" />
     <Compile Include="RaiseAnArayToADegree.cs" />
+    <Compile Include="ReplaceSeparators.cs" />
     <Compile Include="Spectacle.cs" />
     <Compile Include="EnumMeth.cs" />
     <Compile Include="ForAbstractExample.cs" />
@@ -83,16 +85,28 @@
     <Compile Include="Reno.cs" />
     <Compile Include="RobotManage.cs" />
     <Compile Include="SearchArrayIntoArray.cs" />
+    <Compile Include="StrangerCipher.cs" />
     <Compile Include="StructureClass.cs" />
     <Compile Include="Taro.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="TheCourseOfQueen.cs" />
+    <Compile Include="TicTacToe.cs" />
     <Compile Include="Univer.cs" />
+    <Compile Include="UsefulAcquaintances.cs" />
     <Compile Include="Virtual2.cs" />
     <Compile Include="Virtual.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cipher.txt" />
+    <Content Include="citiesPopulation.txt" />
+    <Content Include="tallestBuildings.txt" />
+    <Content Include="usefulAcquaintances.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

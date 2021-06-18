@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Practice
 {
@@ -25,15 +27,15 @@ namespace Practice
 
             //преобразование типов
             num2 = num; //double = int
-            num = (int)(num2); //int = double
+            num = (int) (num2); //int = double
 
-            float d = (float)(num2); //float = double
+            float d = (float) (num2); //float = double
 
             long e = 30;
 
             byte a = 4; // 0 до 255
-            byte b = (byte)(a + 3);
-            short c = (short)(a + 3);
+            byte b = (byte) (a + 3);
+            short c = (short) (a + 3);
 
             Console.WriteLine("Hello\nEveryone" + "\n" + num2 + "\n" + num3 + "\n" + num4 + "\n" + stringVal);
         }
@@ -67,7 +69,7 @@ namespace Practice
 
             var exception = new IndexOutOfRangeException();
             Console.WriteLine(Environment.NewLine + "Enter second num: ");
-            
+
             int num_1 = Convert.ToInt32(Console.ReadLine());
             int sum = num * num_1;
 
@@ -160,6 +162,7 @@ namespace Practice
                     Console.WriteLine(num5 + "\nYou are ??");
                     break;
             }
+
             Console.ReadKey();
         }
 
@@ -267,7 +270,7 @@ namespace Practice
 
         public static void Method10() //Уроки C# (C sharp) | #10 - Цикл foreach
         {
-            int[] numbers2 = { 1, 2, 3, 4, 5 };
+            int[] numbers2 = {1, 2, 3, 4, 5};
 
             foreach (var VARIABLE in numbers2)
             {
@@ -345,6 +348,7 @@ namespace Practice
             {
                 result += numbers[i];
             }
+
             Console.WriteLine(result);
         }
 
@@ -709,6 +713,59 @@ namespace Practice
             //// не забывайте про частные случаи:
             //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new int[0], 1));
             //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] { 42 }, 0));
+
+            //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
+            //TicTacToe.Run("XXX OO. ...");
+            //TicTacToe.Run("OXO XO. .XO"); 
+            //TicTacToe.Run("OXO XOX OX.");
+            //TicTacToe.Run("XOX OXO OXO"); 
+            //TicTacToe.Run("... ... ...");
+            //TicTacToe.Run("XXX OOO ...");
+            //TicTacToe.Run("XOO XOO XX.");
+            //TicTacToe.Run(".O. XO. XOX");
+
+            //ulearn Шифр незнакомки https://ulearn.me/course/basicprogramming/Shifr_neznakomki_673c8a47-9560-4458-9bd9-a0c0b58466aa?autoplay=true
+            //string[] lines = File.ReadAllLines("cipher.txt");
+            //string[] parts;
+            //List<string> list = new List<string>();
+
+            //for (int i = 0; i < lines.Length; i++)
+            //{
+            //    parts = lines[i].Split(' ');
+            //    list.AddRange(parts);
+            //}
+
+            //StrangerCipher.DecodeMessage(list.ToArray());
+
+            //ulearn Полезные знакомства https://ulearn.me/course/basicprogramming/Poleznye_znakomstva_9a4d5ff4-2331-4bef-a3ee-88e54bec88c8?autoplay=true
+            //List<string> addr = new List<string>();
+            //addr.Add("Sаsha:sasha1995@sasha.ru");
+            //addr.Add("Sаsha:alex99@mail.ru");
+            //addr.Add("Sаsha:shurik2020@google.com");
+            //addr.Add("Petya:petya@google.com");
+
+            //UsefulAcquaintances.OptimizeContacts(addr);
+
+            //ulearn Закон Бенфорда https://ulearn.me/course/basicprogramming/Zakon_Benforda_66e248f0-2828-4e23-8d47-eb4e1cdb64b9
+            //BenfordStatistics.GetBenfordStatistics("1");
+            //BenfordStatistics.GetBenfordStatistics("abc");
+            //BenfordStatistics.GetBenfordStatistics("123 456 789");
+            //BenfordStatistics.GetBenfordStatistics("abc 123 def 456 gf 789 i");
+
+            //string[] tallestBuildings = File.ReadAllLines("tallestBuildings.txt");
+            //for (int i = 0; i < tallestBuildings.Length; i++)
+            //{
+            //    string[] parts;
+            //    parts = tallestBuildings[i].Split('\n');
+            //    BenfordStatistics.GetBenfordStatistics(parts.ToString());
+            //}
+
+            //ulearn Split и Join //https://ulearn.me/course/basicprogramming/Split_i_Join_0260707c-b6f6-4e93-b445-68962b241709
+            //string[] citiesPopulation = File.ReadAllLines("citiesPopulation.txt");
+            //string citiesPopulation2 = string.Join("\n", citiesPopulation);
+            //Console.WriteLine(ReplaceSeparators.ReplaceIncorrectSeparators(citiesPopulation2));
+
+
 
             Console.ReadKey();
         }
