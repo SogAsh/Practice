@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace Practice
 {
     internal class Program
     {
-
-        public static void Method0_0()
+        public static void Method00() //Уроки C# (C sharp) | #4 - Переменные. Типы переменных
         {
-            //Уроки C# (C sharp) | #4 - Переменные. Типы переменных
-
             int num = 10; //может быть с "-"
             uint num1 = 10; //только "положительный "+" int
-
-
 
             double num2 = 34.54; //большая точность чем float
             float num3 = 1.39f;
@@ -40,7 +35,7 @@ namespace Practice
             Console.WriteLine("Hello\nEveryone" + "\n" + num2 + "\n" + num3 + "\n" + num4 + "\n" + stringVal);
         }
 
-        public static void Method101()
+        public static void Method01()
         {
             int[] array = new int[5];
             array[0] = 1;
@@ -49,20 +44,13 @@ namespace Practice
             array[3] = 4;
             array[4] = 5;
 
-            foreach (var i in array)
-            {
-
-            }
-
-
             foreach (var t in array)
             {
                 Console.WriteLine(t);
             }
         }
 
-
-        public static void Method100()
+        public static void Method02()
         {
             Console.WriteLine("Enter first num: ");
             var num = Convert.ToInt32(Console.ReadLine());
@@ -84,7 +72,7 @@ namespace Practice
             TEST4
         }
 
-        public static void Method0()
+        public static void Method1()
         {
             int num, num_1;
 
@@ -210,16 +198,27 @@ namespace Practice
             Console.ReadKey();
         }
 
+        public static void Method51() //Уроки C# (C sharp) | #8 - Циклы, а также операторы Break и Continue
+        {
+            var result = " ";
+            for (int j = 0; j < 100; j++)
+            {
+                result = result + j.ToString() + ',';
+            }
+
+            Console.WriteLine(result);
+            Console.ReadKey();
+        }
+
         public static void Method6() //Уроки C# (C sharp) | #9 - Массивы
         {
-            // https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-and-operator-
+            //https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-and-operator-
             int[] array = new int[5];
             array[0] = 1;
             array[1] = 2;
             array[2] = 3;
             array[3] = 4;
             array[4] = 5;
-
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -358,413 +357,497 @@ namespace Practice
             expression.RegularExpressionMethod();
         }
 
+
+        public static void Method14()
+        {
+            People man = new People(); //Уроки C# (C sharp) | #15 - Конструкторы, а также static
+            man.last_name = "Ivanov";
+            Console.WriteLine("Default constructor - last_name " + man.last_name);
+            People woman = new People("Klara", 25);
+        }
+
+        public static void Method15() //Уроки C# (C sharp) | #17 - Аксессоры get и set
+        {
+            Univer Alex = new Univer();
+            Console.WriteLine("В конструкторе Cource = " +
+                              Alex.Constructor); //свойтсво Constructor берет из конструктора Univer()
+            Alex.Constructor = 3;
+            Console.WriteLine("В конструкторе Cource = " + Alex.Constructor);
+            Alex.Degree = "low";
+            Console.WriteLine("В конструкторе Degree = " + Alex.Degree);
+        }
+
+        public static void Method16() //Уроки C# (C sharp) | #18 - Наследование
+        {
+            Reno reno = new Reno("OldReno", "male"); //инициализирую с параметрами конструктор Reno
+            reno.Name = "NewReno"; //наследование конструктора по умолчанию из класса Cars,
+            //т.к. Reno унаследовал и конструкторы в классе Cars
+            Console.WriteLine("Program reno.Name  = " + reno.Name);
+            reno.Method();
+        }
+
+        public static void Method17() //Уроки C# (C sharp) | #19 - Операторы is и as. Массив указателей
+        {
+            List<MarvelHero> marvelHero = new List<MarvelHero>(); //добавление объектов в класс MarvelHero
+            marvelHero.Add(new MarvelHero("Cap", "male"));
+            marvelHero.Add(new MarvelHero("Hulk", "nomale"));
+
+            #region foreach
+
+            foreach (MarvelHero marvelValue in marvelHero)
+            {
+                Console.WriteLine("Имена новых объектов из List = " + marvelValue.Name);
+            }
+
+            foreach (MarvelHero marvelValue in marvelHero)
+            {
+                Console.WriteLine(marvelValue is MarvelHero); //Принадлежит ли  marvelValue классу MarvelHero
+            }
+
+            foreach (MarvelHero marvelValue in marvelHero)
+            {
+                Console.WriteLine(marvelValue is Hero); //Принадлежит ли  marvelValue классу Hero
+            }
+
+            foreach (MarvelHero marvelValue in marvelHero)
+            {
+                Console.WriteLine(marvelValue as Hero); //Принадлежит ли  marvelValue классу Hero
+            }
+
+            #endregion MyRegion
+        }
+
+        public static void Method18() //Уроки C# (C sharp) | #20 - Виртуальные методы
+        {
+            Virtual2 virt = new Virtual2();
+            virt.Print();
+        }
+
+        public static void Method19() //Уроки C# (C sharp) | #21 - Абстрактные классы, методы и свойства
+        {
+            ForAbstractExample pop = new ForAbstractExample();
+            pop.Print();
+            pop.Name = "Odin";
+            Console.WriteLine(pop.Name);
+        }
+
+        public static void Method20() //Уроки C# (C sharp) | #22 - Интерфейсы
+        {
+            ForInterface inter = new ForInterface();
+            inter.Name = "New Interface text";
+            inter.Print();
+            inter.PrintBook();
+            Console.WriteLine(inter.Name);
+        }
+
+        public static void Method21() //Уроки C# (C sharp) | #23 - Перегрузка методов
+        {
+            OverloadMeth mult = new OverloadMeth();
+            mult.Multiply(2, 3);
+            Console.WriteLine();
+            mult.Multiply(2, 3, 4);
+            Console.WriteLine();
+            mult.Multiply("test");
+        }
+
+        public static void Method22() //Уроки C# (C sharp) | #24 - Перечисления (enum)
+        {
+            EnumMeth eenum = new EnumMeth(MyBreed.Bear);
+            eenum.Print();
+        }
+
+        public static void Method23() //Уроки C# (C sharp) | #25 - Структуры
+        {
+            Book one;
+            one.name = "Fant";
+            Console.WriteLine(one.name);
+        }
+
+        public static void Method24() //Ошибки преобразования типов
+        {
+            double pi = Math.PI;
+            float newPi = (float) pi;
+            long tenThousand = 10000L;
+            double tenThousandPi = newPi * tenThousand;
+            int roundedTenThousandPi = (int) Math.Round(tenThousandPi); //округление до ближайшего целого числа
+            int integerPartOfTenThousandPi = (int) tenThousandPi;
+            Console.WriteLine(integerPartOfTenThousandPi);
+            Console.WriteLine(roundedTenThousandPi);
+        }
+
+        public static void Method25()
+        {
+            double amount = 1.11;
+            int peopleCount = 60;
+            int totalMoney = (int) Math.Round(amount * peopleCount); //округление до ближайшего целого числа
+            Console.WriteLine(totalMoney);
+        }
+
+        public static void Method26() //Преобразование строки в число
+        {
+            string doubleNumber = "894376.243643";
+            double number = double.Parse(doubleNumber); //работает в старой студии
+            Console.WriteLine(number + 1);
+        }
+
+        public static void Method27() //Использование var
+        {
+            double a = 5;
+            a += 0.5;
+            Console.WriteLine(a);
+        }
+
+        public static void
+            Method28() //ulearn Главный вопрос Вселенной https://ulearn.me/course/basicprogramming/Glavnyy_vopros_Vselennoy_d5b59540-410f-4f6d-8f04-b5613e264bd5
+        {
+            MainQuestionUniverse.NewPrint(MainQuestionUniverse.GetSquare(42));
+        }
+
+        public static void Method29(int a, int b, int c)
+        {
+            if ((a < 0) || (a == 0 && b != 0))
+                return "Impossible";
+            else
+            {
+                if (a == 0 && b == 0)
+                    return c.ToString();
+                else
+                    return (-b / (2 * a)).ToString();
+            }
+        }
+
+        public static void Method30()
+        {
+            Console.WriteLine(Method18(1, 2, 3));
+            Console.WriteLine(Method18(0, 3, 2));
+            Console.WriteLine(Method18(1, -2, -3));
+            Console.WriteLine(Method18(5, 2, 1));
+            Console.WriteLine(Method18(4, 3, 2));
+            Console.WriteLine(Method18(0, 4, 5));
+
+            //А в этих случаях решение существует:
+            Console.WriteLine(Method18(0, 0, 2) != "Impossible");
+            Console.WriteLine(Method18(0, 0, 0) != "Impossible");
+        }
+
+        public static void
+            Method31() //ulearn Добрый работодатель https://ulearn.me/course/basicprogramming/Dobryy_rabotodatel__f6559650-b3af-4e5e-be84-941fb21bc2ac
+        {
+            Console.WriteLine(KindEmploer.GetGreetingMessage("Student", 10.01));
+            Console.WriteLine(KindEmploer.GetGreetingMessage("Bill Gates", 10000000.5));
+            Console.WriteLine(KindEmploer.GetGreetingMessage("Steve Jobs", 1));
+        }
+
+        public static void
+            Method32() //ulearn Разыскиваются методы! https://ulearn.me/Course/BasicProgramming/Razyskivayutsya_metody__d8578c7f-d7e2-4ce5-a3be-e6e32d9ac63e
+        {
+            Console.WriteLine(MethodsWanted.GetLastHalf("I love CSharp!"));
+            Console.WriteLine(MethodsWanted.GetLastHalf("1234567890"));
+            Console.WriteLine(MethodsWanted.GetLastHalf("до ре ми фа соль ля си"));
+        }
+
+        public static void
+            Method33() //ulearn Високосный год https://ulearn.me/course/basicprogramming/Visokosnyy_god_4c161b1e-2637-447b-adfd-14647bf659ad?autoplay=true
+        {
+            LeapYear LeapYear = new LeapYear();
+            Console.WriteLine(LeapYear.IsLeapYear(1700));
+            Console.WriteLine(LeapYear.IsLeapYear(1999));
+            Console.WriteLine(LeapYear.IsLeapYear(8992));
+            Console.WriteLine(LeapYear.IsLeapYear(1));
+            Console.WriteLine(LeapYear.IsLeapYear(14));
+            Console.WriteLine(LeapYear.IsLeapYear(400));
+            Console.WriteLine(LeapYear.IsLeapYear(600));
+            Console.WriteLine(LeapYear.IsLeapYear(3200));
+        }
+
+        public static void
+            Method34() //ulearn Сравнение чисел с плавающей точкой https://ulearn.me/course/basicprogramming/Sravnenie_chisel_s_plavayushchey_tochkoy_1e844dc5-c026-4acc-b28f-086a2e7c6f8e
+        {
+            //в бинарном виде 0.1 представляется бесконечной дробью 0.00011001100..., в типах данных float и double хранится только начало этой дроби, поэтому число 0.1 представляется с погрешностью. 
+            double x = 1.0 / 10;
+            double sum = 0;
+            for (int i = 0; i < 10; i++) sum += x;
+            Console.WriteLine(Math.Abs(sum - 1) <
+                              1e-9); //Здесь мы проверяем, что числа равны не в точности, но что модуль их разности меньше некоторого маленького числа. Всегда используйте такую конструкцию при сравнении чисел с плавающей точкой.
+        }
+
+        public static void
+            Method35() //ulearn Ход ферзя https://ulearn.me/course/basicprogramming/Khod_ferzya_eb11dfb6-5629-4d13-819b-6411b9f93df6?autoplay=true
+        {
+            TheCourseOfQueen TheCourseOfQueen = new TheCourseOfQueen();
+            TheCourseOfQueen.TestMove("a1", "d4");
+            TheCourseOfQueen.TestMove("f4", "e7");
+            TheCourseOfQueen.TestMove("a1", "a4");
+            TheCourseOfQueen.TestMove("a1", "a1");
+        }
+
+        public static void
+            Method36() //ulearn Среднее трех https://ulearn.me/course/basicprogramming/Srednee_trekh_937c4e64-7144-4f52-a75d-4bdc95bbde72?autoplay=true
+        {
+            AverageOfThree AverageOfThree = new AverageOfThree();
+            Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
+            Console.WriteLine(AverageOfThree.MiddleOf(12, 12, 11)); // => 12
+            Console.WriteLine(AverageOfThree.MiddleOf(1, 1, 1)); // => 1
+            Console.WriteLine(AverageOfThree.MiddleOf(2, 3, 2)); //2
+            Console.WriteLine(AverageOfThree.MiddleOf(8, 8, 8)); //8
+            Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 1)); //1
+            Console.WriteLine(AverageOfThree.MiddleOf(47, 15, 19)); //19
+            Console.WriteLine(AverageOfThree.MiddleOf(11, 97, 97)); //97
+        }
+
+        public static void
+            Method37() //ulearn Управление роботом https://ulearn.me/course/basicprogramming/Upravlenie_robotom_50ac4fc7-a6e1-4c4e-8c61-ecc75aeb912e
+        {
+            RobotManage RobotManage = new RobotManage();
+            RobotManage.ShouldFire(true, "boss", 70);
+            RobotManage.ShouldFire2(true, "boss", 70);
+        }
+
+        public static void
+            Method38() //ulearn В поисках степени двойки https://ulearn.me/course/basicprogramming/V_poiskakh_stepeni_dvoyki_4158c9a6-a71d-4015-a283-def12be0055e
+        {
+            // Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(2)); // => 4
+            // Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(15)); // => 16
+            // Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(-2)); // => 1
+            // Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(-100));
+            // Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(100));
+        }
+
+        public static void
+            Method39() //ulearn Убрать пробелы https://ulearn.me/course/basicprogramming/Ubrat_probely_9a15ebd5-0616-4a18-b842-e63e2c3c21fa
+        {
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("a"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" b"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" cd"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" efg"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" text"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" two words"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("  two spaces"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("	tabs"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("		two	tabs"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("                             many spaces"));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("               "));
+            Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("\n\r line breaks are spaces too"));
+        }
+
+        public static void
+            Method40() //ulearn Рамочка https://ulearn.me/course/basicprogramming/Ramochka_6923aa65-95e0-4b5e-a98d-b286fd0b2153
+        {
+            Frame.WriteTextWithBorder("Menu:");
+            Frame.WriteTextWithBorder("");
+            Frame.WriteTextWithBorder(" ");
+            Frame.WriteTextWithBorder("Game Over!");
+            Frame.WriteTextWithBorder("Select level:");
+        }
+
+        public static void
+            Method41() //ulearn Шахматная доска https://ulearn.me/course/basicprogramming/_Shakhmatnaya_doska_8e561342-9f4b-411d-bb9b-741a3677f696
+        {
+            Chess.WriteBoard(8);
+            Chess.WriteBoard(1);
+            Chess.WriteBoard(2);
+            Chess.WriteBoard(3);
+            Chess.WriteBoard(10);
+        }
+
+        public static void
+            Method42() //ulearn Четный массив https://ulearn.me/course/basicprogramming/Chetnyy_massiv_ceb81eac-069c-4d5d-87b7-ebd9b140e143?autoplay=true
+        {
+            BlackArray.GetFirstEvenNumbers(3);
+            BlackArray.GetFirstEvenNumbers(2);
+            BlackArray.GetFirstEvenNumbers(4);
+        }
+
+        public static void
+            Method43() //ulearn Индекс максимума https://ulearn.me/course/basicprogramming/Indeks_maksimuma_043015a0-0b28-4435-8079-21e4ca8e6526
+        {
+            double[] a = {1, 9, 9, 8, 9, 2, 2};
+            double[] b = {1, 2, 46, 14, 64, 64};
+            double[] d = {1, 2, 3};
+            Console.WriteLine(MaximumIndex.MaxIndex(a));
+            Console.WriteLine(MaximumIndex.MaxIndex(b));
+            Console.WriteLine(MaximumIndex.MaxIndex(d));
+        }
+
+        public static void
+            Method44() //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
+        {
+            int[] a = {1, 2, 1, 1};
+            Console.WriteLine(Count.GetElementCount(a, 1));
+        }
+
+        public static void
+            Method45() //ulearn Поиск массива в массиве https://ulearn.me/course/basicprogramming/Poisk_massiva_v_massive_df8d1ca7-9aab-4816-8047-a834c6ca64d4
+        {
+            int[] array = {1, 6, 2, 3, 4, 3, 4};
+            int[] subarray = {3, 4, 9};
+            SearchArrayIntoArray.FindSubarrayStartIndex(array, subarray);
+        }
+
+        public static void
+            Method46() //ulearn Карты Таро https://ulearn.me/course/basicprogramming/Karty_Taro_26c265ba-ea70-4aa9-bf6b-5c215576a3ab
+        {
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Wands));
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Coins));
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Cups));
+            Console.WriteLine(Taro.GetSuit(Taro.Suits.Swords));
+        }
+
+        public static void
+            Method47() //FluentAPI Более сложный случай https://ulearn.me/course/cs2/Bolee_slozhnyy_sluchay_df079b25-8952-4d6f-976b-f92b17c93005
+        {
+            var spectacle = new Spectacle()
+                .Say("Привет мир!")
+                .Delay(TimeSpan.FromSeconds(1))
+                .UntilKeyPressed(s =>
+                    s.Say("тра-ля-ля")
+                        .Delay(TimeSpan.FromMilliseconds(500))
+                        .Say("тру-лю-лю")
+                        .Delay(TimeSpan.FromMilliseconds(500))
+                )
+                .Say("Пока-пока!");
+            spectacle.Play();
+        }
+
+        public static void
+            Method48() //FluentAPI Расширяемость Fluent-Интерфейсов https://ulearn.me/course/cs2/Rasshiryaemost_Fluent_Interfeysov_30c4a153-5510-4015-ab90-98e259b8da7f
+        {
+            var newSpectacle = new NewSpectacle()
+                .Say("Привет мир!")
+                .Delay(TimeSpan.FromSeconds(1))
+                .UntilKeyPressed(s =>
+                    s.TypeText("тра-ля-ля")
+                        .TypeText("тру-лю-лю")
+                )
+                .Say("Пока-пока!");
+
+            newSpectacle.Play();
+        }
+
+        public static void
+            Method49() //ulearn Null или не Null? https://ulearn.me/course/basicprogramming/Null_ili_ne_Null__05581efc-0377-438e-b6c6-90778d3c8922
+        {
+            Console.WriteLine(NullOrNotNull.CheckFirstElement(null));
+            Console.WriteLine(NullOrNotNull.CheckFirstElement(new int[0]));
+            Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] {1}));
+            Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] {0}));
+        }
+
+        public static void
+            Method50() //ulearn Возвести массив в степень https://ulearn.me/course/basicprogramming/Vozvesti_massiv_v_stepen__e3e45ec7-7bd0-4284-8ca1-0fbcb2fa0c21
+        {
+            var arrayToPower = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+            // Метод PrintArray уже написан за вас
+            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 1));
+            // если вы будете менять исходный массив, то следующие два теста сработают неверно:
+            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 2));
+            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 3));
+            // не забывайте про частные случаи:
+            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new int[0], 1));
+            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] {42}, 0));
+        }
+
+        public static void
+            Method51() //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
+        {
+            TicTacToe.Run("XXX OO. ...");
+            TicTacToe.Run("OXO XO. .XO");
+            TicTacToe.Run("OXO XOX OX.");
+            TicTacToe.Run("XOX OXO OXO");
+            TicTacToe.Run("... ... ...");
+            TicTacToe.Run("XXX OOO ...");
+            TicTacToe.Run("XOO XOO XX.");
+            TicTacToe.Run(".O. XO. XOX");
+        }
+
+        public static void
+            Method52() //ulearn Шифр незнакомки https://ulearn.me/course/basicprogramming/Shifr_neznakomki_673c8a47-9560-4458-9bd9-a0c0b58466aa?autoplay=true
+        {
+            string[] lines = File.ReadAllLines("cipher.txt");
+            string[] parts;
+            List<string> list = new List<string>();
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                parts = lines[i].Split(' ');
+                list.AddRange(parts);
+            }
+
+            StrangerCipher.DecodeMessage(list.ToArray());
+        }
+
+        public static void
+            Method53() //ulearn Полезные знакомства https://ulearn.me/course/basicprogramming/Poleznye_znakomstva_9a4d5ff4-2331-4bef-a3ee-88e54bec88c8?autoplay=true
+        {
+            List<string> addr = new List<string>();
+            addr.Add("Sаsha:sasha1995@sasha.ru");
+            addr.Add("Sаsha:alex99@mail.ru");
+            addr.Add("Sаsha:shurik2020@google.com");
+            addr.Add("Petya:petya@google.com");
+
+            UsefulAcquaintances.OptimizeContacts(addr);
+        }
+
+        public static void
+            Method54() //ulearn Закон Бенфорда https://ulearn.me/course/basicprogramming/Zakon_Benforda_66e248f0-2828-4e23-8d47-eb4e1cdb64b9
+        {
+            BenfordStatistics.GetBenfordStatistics("1");
+            BenfordStatistics.GetBenfordStatistics("abc");
+            BenfordStatistics.GetBenfordStatistics("123 456 789");
+            BenfordStatistics.GetBenfordStatistics("abc 123 def 456 gf 789 i");
+
+            string[] tallestBuildings = File.ReadAllLines("tallestBuildings.txt");
+            for (int i = 0; i < tallestBuildings.Length; i++)
+            {
+                string[] parts;
+                parts = tallestBuildings[i].Split('\n');
+                BenfordStatistics.GetBenfordStatistics(parts.ToString());
+            }
+        }
+
+        public static void
+            Method55() //ulearn Split и Join //https://ulearn.me/course/basicprogramming/Split_i_Join_0260707c-b6f6-4e93-b445-68962b241709
+        {
+            string[] citiesPopulation = File.ReadAllLines("citiesPopulation.txt");
+            string citiesPopulation2 = string.Join("\n", citiesPopulation);
+            Console.WriteLine(ReplaceSeparators.ReplaceIncorrectSeparators(citiesPopulation2));
+        }
+
+        public static void
+            Method56() //ulearn Снова незнакомка https://ulearn.me/course/basicprogramming/Snova_neznakomka_741d39bd-d543-40d2-abbc-941c7f778106
+        {
+            string[] StrangerAgainText = File.ReadAllLines("StrangerAgainText.txt");
+            StrangerAgain.ApplyCommands(StrangerAgainText);
+        }
+
         private static void Main(string[] args)
         {
-            //Method0_0()
-            //Method();
-            //Method2();
-            //Method3();
-            //Method4();
-            //Method5();
-            //Method6();
-            //Method7();
-            //Method8();
-            //Method9();
-            //Method10();
-
-            //int res = Method11(2, 3);
-            //Console.WriteLine(res);
-
-            //Method12();
-            //Method13();
-            //CatAndDog.MethodCatAndDog(); //Уроки C# (C sharp) | #14 - Создание классов (Classes)
-
-            //People man = new People(); //Уроки C# (C sharp) | #15 - Конструкторы, а также static
-            //man.last_name = "Ivanov";
-            //Console.WriteLine("Default constructor - last_name " + man.last_name);
-            //People woman = new People("Klara", 25);
-
-            //Уроки C# (C sharp) | #17 - Аксессоры get и set
-            //Univer Alex = new Univer();
-            //Console.WriteLine("В конструкторе Cource = " + Alex.Constructor); //свойтсво Constructor берет из конструктора Univer()
-            //Alex.Constructor = 3;
-            //Console.WriteLine("В конструкторе Cource = " + Alex.Constructor);
-            //Alex.Degree = "low";
-            //Console.WriteLine("В конструкторе Degree = " + Alex.Degree);
-
-            //Уроки C# (C sharp) | #18 - Наследование
-            //Reno reno = new Reno("OldReno", "male"); //инициализирую с параметрами конструктор Reno
-            //reno.Name = "NewReno"; //наследование конструктора по умолчанию из класса Cars,
-            //                       //т.к. Reno унаследовал и конструкторы в классе Cars
-            //Console.WriteLine("Program reno.Name  = " + reno.Name);
-            //reno.Method();
-
-            //Уроки C# (C sharp) | #19 - Операторы is и as. Массив указателей
-            //List<MarvelHero> marvelHero = new List<MarvelHero>(); //добавление объектов в класс MarvelHero
-            //marvelHero.Add(new MarvelHero("Cap", "male"));
-            //marvelHero.Add(new MarvelHero("Hulk", "nomale"));
-
-            //#region foreach
-            //foreach (MarvelHero marvelValue in marvelHero)
-            //{
-            //    Console.WriteLine("Имена новых объектов из List = " + marvelValue.Name);
-            //}
-
-            //foreach (MarvelHero marvelValue in marvelHero)
-            //{
-            //    Console.WriteLine(marvelValue is MarvelHero); //Принадлежит ли  marvelValue классу MarvelHero
-            //}
-
-            //foreach (MarvelHero marvelValue in marvelHero)
-            //{
-            //    Console.WriteLine(marvelValue is Hero); //Принадлежит ли  marvelValue классу Hero
-            //}
-
-            //foreach (MarvelHero marvelValue in marvelHero)
-            //{
-            //    Console.WriteLine(marvelValue as Hero); //Принадлежит ли  marvelValue классу Hero
-            //}
-            //#endregion MyRegion
-
-            //Уроки C# (C sharp) | #20 - Виртуальные методы
-            //Virtual2 virt = new Virtual2();
-            //virt.Print();
-
-            //Уроки C# (C sharp) | #21 - Абстрактные классы, методы и свойства
-            //ForAbstractExample pop = new ForAbstractExample();
-            //pop.Print();
-            //pop.Name = "Odin";
-            //Console.WriteLine(pop.Name);
-
-            //Уроки C# (C sharp) | #22 - Интерфейсы
-            //ForInterface inter = new ForInterface();
-            //inter.Name = "New Interface text";
-            //inter.Print();
-            //inter.PrintBook();
-            //Console.WriteLine(inter.Name);
-
-            //Уроки C# (C sharp) | #23 - Перегрузка методов
-            //OverloadMeth mult = new OverloadMeth();
-            //mult.Multiply(2, 3);
-            //Console.WriteLine();
-            //mult.Multiply(2, 3, 4);
-            //Console.WriteLine();
-            //mult.Multiply("test");
-
-            //Уроки C# (C sharp) | #24 - Перечисления (enum)
-            //EnumMeth eenum = new EnumMeth(MyBreed.Bear);
-            //eenum.Print();
-
-            //Уроки C# (C sharp) | #25 - Структуры
-            //Book one;
-            //one.name = "Fant";
-            //Console.WriteLine(one.name);
-
-            //------------------------------
-
-            //TestClass.str = "creep"; //Вызов статической переменной без создание объекта класса
-            //TestClass2.Test2(); //Вызов статического метода без создание объекта класса
-
-            //Addition(new[] { 1, 2 });
-            //Addition(2, 3);
-            //Addition();
-
-            //RegularExpression();
-
-            //Byke newByke = new Byke();
-            //newByke.Print();
-            //newByke.byke.name = "Hamer";
-
-            //NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
-            //newByke.Method1(newNewByke);
-
-
-            //FreePracties free = new FreePracties();
-            //free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
+            // int res = Method11(2, 3);
+            // Console.WriteLine(res);
+            //
+            // CatAndDog.MethodCatAndDog(); //Уроки C# (C sharp) | #14 - Создание классов (Classes)
+            //
+            // TestClass.str = "creep"; //Вызов статической переменной без создание объекта класса
+            // TestClass2.Test2(); //Вызов статического метода без создание объекта класса
+            //
+            // Addition(new[] { 1, 2 });
+            // Addition(2, 3);
+            // Addition();
+            //
+            // RegularExpression();
+            //
+            // Byke newByke = new Byke();
+            // newByke.Print();
+            // newByke.byke.name = "Hamer";
+            //
+            // NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
+            // newByke.Method1(newNewByke);
+            //
+            // FreePracties free = new FreePracties();
+            // free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
             //т.е. мы кладем туда метод void PrintBook()???
 
-
-            //ULEARN -----------------------------------------------------------------------------------------------------------------------------------
-
-            //static void Method14() //Ошибки преобразования типов
-            //{
-            //    double pi = Math.PI;
-            //    float newPi = (float)pi;
-            //    long tenThousand = 10000L;
-            //    double tenThousandPi = newPi * tenThousand;
-            //    int roundedTenThousandPi = (int)Math.Round(tenThousandPi); //округление до ближайшего целого числа
-            //    int integerPartOfTenThousandPi = (int)tenThousandPi;
-            //    Console.WriteLine(integerPartOfTenThousandPi);
-            //    Console.WriteLine(roundedTenThousandPi);
-            //}
-
-            //Method14();
-
-            //static void Method15() //Биткоины в массы!
-            //{
-            //    double amount = 1.11;
-            //    int peopleCount = 60;
-            //    int totalMoney = (int)Math.Round(amount * peopleCount); //округление до ближайшего целого числа
-            //    Console.WriteLine(totalMoney);
-            //}
-
-            //Method15();
-
-            //static void Method16() //Преобразование строки в число
-            //{
-            //    string doubleNumber = "894376.243643";
-            //    //double number = double.Parse(doubleNumber); работает в старой студии
-            //    //Console.WriteLine(number + 1);
-            //}
-
-            //Method16();
-
-            //static void Method17() //Использование var
-            //{
-            //    double a = 5;
-            //    a += 0.5;
-            //    Console.WriteLine(a);
-            //}
-
-            //Method17();
-
-
-            //ulearn Главный вопрос Вселенной https://ulearn.me/course/basicprogramming/Glavnyy_vopros_Vselennoy_d5b59540-410f-4f6d-8f04-b5613e264bd5
-            //MainQuestionUniverse.NewPrint(MainQuestionUniverse.GetSquare(42));
-
-            //static string Method18(int a, int b, int c)
-            //{
-            //    if ((a < 0) || (a == 0 && b != 0))
-            //        return "Impossible";
-            //    else
-            //    {
-            //        if (a == 0 && b == 0)
-            //            return c.ToString();
-            //        else
-            //            return (-b / (2 * a)).ToString();
-            //    }
-            //}
-
-            //Console.WriteLine(Method18(1, 2, 3));
-            //Console.WriteLine(Method18(0, 3, 2));
-            //Console.WriteLine(Method18(1, -2, -3));
-            //Console.WriteLine(Method18(5, 2, 1));
-            //Console.WriteLine(Method18(4, 3, 2));
-            //Console.WriteLine(Method18(0, 4, 5));
-
-            // А в этих случаях решение существует:
-            //Console.WriteLine(Method18(0, 0, 2) != "Impossible");
-            //Console.WriteLine(Method18(0, 0, 0) != "Impossible");
-
-            //--------------------------------------------------------------------------------------------------------------------------------------
-
-            //ulearn Добрый работодатель https://ulearn.me/course/basicprogramming/Dobryy_rabotodatel__f6559650-b3af-4e5e-be84-941fb21bc2ac
-            //Console.WriteLine(KindEmploer.GetGreetingMessage("Student", 10.01));
-            //Console.WriteLine(KindEmploer.GetGreetingMessage("Bill Gates", 10000000.5));
-            //Console.WriteLine(KindEmploer.GetGreetingMessage("Steve Jobs", 1));
-
-            //ulearn Разыскиваются методы! https://ulearn.me/Course/BasicProgramming/Razyskivayutsya_metody__d8578c7f-d7e2-4ce5-a3be-e6e32d9ac63e
-            //Console.WriteLine(MethodsWanted.GetLastHalf("I love CSharp!"));
-            //Console.WriteLine(MethodsWanted.GetLastHalf("1234567890"));
-            //Console.WriteLine(MethodsWanted.GetLastHalf("до ре ми фа соль ля си"));
-
-            //ulearn Високосный год https://ulearn.me/course/basicprogramming/Visokosnyy_god_4c161b1e-2637-447b-adfd-14647bf659ad?autoplay=true
-            //LeapYear LeapYear = new LeapYear();
-            //Console.WriteLine(LeapYear.IsLeapYear(1700));
-            //Console.WriteLine(LeapYear.IsLeapYear(1999));
-            //Console.WriteLine(LeapYear.IsLeapYear(8992));
-            //Console.WriteLine(LeapYear.IsLeapYear(1));
-            //Console.WriteLine(LeapYear.IsLeapYear(14));
-            //Console.WriteLine(LeapYear.IsLeapYear(400));
-            //Console.WriteLine(LeapYear.IsLeapYear(600));
-            //Console.WriteLine(LeapYear.IsLeapYear(3200));
-
-            //ulearn Сравнение чисел с плавающей точкой https://ulearn.me/course/basicprogramming/Sravnenie_chisel_s_plavayushchey_tochkoy_1e844dc5-c026-4acc-b28f-086a2e7c6f8e
-            // в бинарном виде 0.1 представляется бесконечной дробью 0.00011001100..., в типах данных float и double хранится только начало этой дроби, поэтому число 0.1 представляется с погрешностью. 
-            //double x = 1.0 / 10;  double sum = 0;
-            //for (int i = 0; i < 10; i++) sum += x;
-            //Console.WriteLine(Math.Abs(sum - 1) < 1e-9); //Здесь мы проверяем, что числа равны не в точности, но что модуль их разности меньше некоторого маленького числа. Всегда используйте такую конструкцию при сравнении чисел с плавающей точкой.
-
-            //ulearn Ход ферзя https://ulearn.me/course/basicprogramming/Khod_ferzya_eb11dfb6-5629-4d13-819b-6411b9f93df6?autoplay=true
-            //TheCourseOfQueen TheCourseOfQueen = new TheCourseOfQueen();
-            //TheCourseOfQueen.TestMove("a1", "d4");
-            //TheCourseOfQueen.TestMove("f4", "e7");
-            //TheCourseOfQueen.TestMove("a1", "a4");
-            //TheCourseOfQueen.TestMove("a1", "a1");
-
-            //ulearn Среднее трех https://ulearn.me/course/basicprogramming/Srednee_trekh_937c4e64-7144-4f52-a75d-4bdc95bbde72?autoplay=true
-            //AverageOfThree AverageOfThree = new AverageOfThree();
-            //Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
-            //Console.WriteLine(AverageOfThree.MiddleOf(12, 12, 11)); // => 12
-            //Console.WriteLine(AverageOfThree.MiddleOf(1, 1, 1)); // => 1
-            //Console.WriteLine(AverageOfThree.MiddleOf(2, 3, 2)); //2
-            //Console.WriteLine(AverageOfThree.MiddleOf(8, 8, 8)); //8
-            //Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 1)); //1
-            //Console.WriteLine(AverageOfThree.MiddleOf(47, 15, 19)); //19
-            //Console.WriteLine(AverageOfThree.MiddleOf(11, 97, 97)); //97
-
-            //ulearn Управление роботом https://ulearn.me/course/basicprogramming/Upravlenie_robotom_50ac4fc7-a6e1-4c4e-8c61-ecc75aeb912e
-            //RobotManage RobotManage = new RobotManage();
-            //RobotManage.ShouldFire(true, "boss", 70);
-            //RobotManage.ShouldFire2(true, "boss", 70);
-
-            //ulearn В поисках степени двойки https://ulearn.me/course/basicprogramming/V_poiskakh_stepeni_dvoyki_4158c9a6-a71d-4015-a283-def12be0055e
-            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(2)); // => 4
-            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(15)); // => 16
-            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(-2)); // => 1
-            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(-100));
-            //Console.WriteLine(InSearchOfThePowerOfTwo.GetMinPowerOfTwoLargerThan(100));
-
-            //ulearn Убрать пробелы https://ulearn.me/course/basicprogramming/Ubrat_probely_9a15ebd5-0616-4a18-b842-e63e2c3c21fa
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("a"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" b"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" cd"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" efg"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" text"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces(" two words"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("  two spaces"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("	tabs"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("		two	tabs"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("                             many spaces"));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("               "));
-            //Console.WriteLine(DeleteWhitespaces.RemoveStartSpaces("\n\r line breaks are spaces too"));
-
-            //ulearn Рамочка https://ulearn.me/course/basicprogramming/Ramochka_6923aa65-95e0-4b5e-a98d-b286fd0b2153
-            //Frame.WriteTextWithBorder("Menu:");
-            //Frame.WriteTextWithBorder("");
-            //Frame.WriteTextWithBorder(" ");
-            //Frame.WriteTextWithBorder("Game Over!");
-            //Frame.WriteTextWithBorder("Select level:");
-
-            //ulearn Шахматная доска https://ulearn.me/course/basicprogramming/_Shakhmatnaya_doska_8e561342-9f4b-411d-bb9b-741a3677f696
-            //Chess.WriteBoard(8);
-            //Chess.WriteBoard(1);
-            //Chess.WriteBoard(2);
-            //Chess.WriteBoard(3);
-            //Chess.WriteBoard(10);
-
-            //ulearn Четный массив https://ulearn.me/course/basicprogramming/Chetnyy_massiv_ceb81eac-069c-4d5d-87b7-ebd9b140e143?autoplay=true
-            //BlackArray.GetFirstEvenNumbers(3);
-            //BlackArray.GetFirstEvenNumbers(2);
-            //BlackArray.GetFirstEvenNumbers(4);
-
-            //ulearn Индекс максимума https://ulearn.me/course/basicprogramming/Indeks_maksimuma_043015a0-0b28-4435-8079-21e4ca8e6526
-            //double[] a = { 1, 9, 9, 8, 9, 2, 2 };
-            //double[] b = { 1, 2, 46, 14, 64, 64 };
-            //double[] d = { 1, 2, 3 };
-            //Console.WriteLine(MaximumIndex.MaxIndex(a));
-            //Console.WriteLine(MaximumIndex.MaxIndex(b));
-            //Console.WriteLine(MaximumIndex.MaxIndex(d));
-
-            //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
-            //int[] a = { 1, 2, 1, 1 };
-            //Console.WriteLine(Count.GetElementCount(a, 1));
-
-            //ulearn Поиск массива в массиве https://ulearn.me/course/basicprogramming/Poisk_massiva_v_massive_df8d1ca7-9aab-4816-8047-a834c6ca64d4
-            //int[] array = { 1, 6, 2, 3, 4, 3, 4 };
-            //int[] subarray = { 3, 4, 9 };
-            //SearchArrayIntoArray.FindSubarrayStartIndex(array, subarray);
-
-            //ulearn Карты Таро https://ulearn.me/course/basicprogramming/Karty_Taro_26c265ba-ea70-4aa9-bf6b-5c215576a3ab
-            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Wands));
-            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Coins));
-            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Cups));
-            //Console.WriteLine(Taro.GetSuit(Taro.Suits.Swords));
-
-            //FluentAPI Более сложный случай https://ulearn.me/course/cs2/Bolee_slozhnyy_sluchay_df079b25-8952-4d6f-976b-f92b17c93005
-            //var spectacle = new Spectacle()
-            //    .Say("Привет мир!")
-            //    .Delay(TimeSpan.FromSeconds(1))
-            //    .UntilKeyPressed(s =>
-            //        s.Say("тра-ля-ля")
-            //            .Delay(TimeSpan.FromMilliseconds(500))
-            //            .Say("тру-лю-лю")
-            //            .Delay(TimeSpan.FromMilliseconds(500))
-            //    )
-            //    .Say("Пока-пока!");
-
-            //spectacle.Play();
-
-            //FluentAPI Расширяемость Fluent-Интерфейсов https://ulearn.me/course/cs2/Rasshiryaemost_Fluent_Interfeysov_30c4a153-5510-4015-ab90-98e259b8da7f
-            //var newSpectacle = new NewSpectacle()
-            //    .Say("Привет мир!")
-            //    .Delay(TimeSpan.FromSeconds(1))
-            //    .UntilKeyPressed(s =>
-            //        s.TypeText("тра-ля-ля")
-            //        .TypeText("тру-лю-лю")
-            //    )
-            //    .Say("Пока-пока!");
-
-            //newSpectacle.Play();
-
-            //ulearn Null или не Null? https://ulearn.me/course/basicprogramming/Null_ili_ne_Null__05581efc-0377-438e-b6c6-90778d3c8922
-            //Console.WriteLine(NullOrNotNull.CheckFirstElement(null));
-            //Console.WriteLine(NullOrNotNull.CheckFirstElement(new int[0]));
-            //Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] { 1 }));
-            //Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] { 0 }));
-
-            //ulearn Возвести массив в степень https://ulearn.me/course/basicprogramming/Vozvesti_massiv_v_stepen__e3e45ec7-7bd0-4284-8ca1-0fbcb2fa0c21
-            //var arrayToPower = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            //// Метод PrintArray уже написан за вас
-            //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 1));
-            //// если вы будете менять исходный массив, то следующие два теста сработают неверно:
-            //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 2));
-            //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 3));
-            //// не забывайте про частные случаи:
-            //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new int[0], 1));
-            //RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] { 42 }, 0));
-
-            //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
-            //TicTacToe.Run("XXX OO. ...");
-            //TicTacToe.Run("OXO XO. .XO"); 
-            //TicTacToe.Run("OXO XOX OX.");
-            //TicTacToe.Run("XOX OXO OXO"); 
-            //TicTacToe.Run("... ... ...");
-            //TicTacToe.Run("XXX OOO ...");
-            //TicTacToe.Run("XOO XOO XX.");
-            //TicTacToe.Run(".O. XO. XOX");
-
-            //ulearn Шифр незнакомки https://ulearn.me/course/basicprogramming/Shifr_neznakomki_673c8a47-9560-4458-9bd9-a0c0b58466aa?autoplay=true
-            //string[] lines = File.ReadAllLines("cipher.txt");
-            //string[] parts;
-            //List<string> list = new List<string>();
-
-            //for (int i = 0; i < lines.Length; i++)
-            //{
-            //    parts = lines[i].Split(' ');
-            //    list.AddRange(parts);
-            //}
-
-            //StrangerCipher.DecodeMessage(list.ToArray());
-
-            //ulearn Полезные знакомства https://ulearn.me/course/basicprogramming/Poleznye_znakomstva_9a4d5ff4-2331-4bef-a3ee-88e54bec88c8?autoplay=true
-            //List<string> addr = new List<string>();
-            //addr.Add("Sаsha:sasha1995@sasha.ru");
-            //addr.Add("Sаsha:alex99@mail.ru");
-            //addr.Add("Sаsha:shurik2020@google.com");
-            //addr.Add("Petya:petya@google.com");
-
-            //UsefulAcquaintances.OptimizeContacts(addr);
-
-            //ulearn Закон Бенфорда https://ulearn.me/course/basicprogramming/Zakon_Benforda_66e248f0-2828-4e23-8d47-eb4e1cdb64b9
-            //BenfordStatistics.GetBenfordStatistics("1");
-            //BenfordStatistics.GetBenfordStatistics("abc");
-            //BenfordStatistics.GetBenfordStatistics("123 456 789");
-            //BenfordStatistics.GetBenfordStatistics("abc 123 def 456 gf 789 i");
-
-            //string[] tallestBuildings = File.ReadAllLines("tallestBuildings.txt");
-            //for (int i = 0; i < tallestBuildings.Length; i++)
-            //{
-            //    string[] parts;
-            //    parts = tallestBuildings[i].Split('\n');
-            //    BenfordStatistics.GetBenfordStatistics(parts.ToString());
-            //}
-
-            //ulearn Split и Join //https://ulearn.me/course/basicprogramming/Split_i_Join_0260707c-b6f6-4e93-b445-68962b241709
-            //string[] citiesPopulation = File.ReadAllLines("citiesPopulation.txt");
-            //string citiesPopulation2 = string.Join("\n", citiesPopulation);
-            //Console.WriteLine(ReplaceSeparators.ReplaceIncorrectSeparators(citiesPopulation2));
-
+            //Console.WriteLine(Encoding.UTF8.GetBytes("БЩФzw!").Length);
 
 
             Console.ReadKey();

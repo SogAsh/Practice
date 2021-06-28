@@ -85,6 +85,8 @@
     <Compile Include="Reno.cs" />
     <Compile Include="RobotManage.cs" />
     <Compile Include="SearchArrayIntoArray.cs" />
+    <Compile Include="StackExample.cs" />
+    <Compile Include="StrangerAgain.cs" />
     <Compile Include="StrangerCipher.cs" />
     <Compile Include="StructureClass.cs" />
     <Compile Include="Taro.cs" />
@@ -105,6 +107,7 @@
   <ItemGroup>
     <Content Include="cipher.txt" />
     <Content Include="citiesPopulation.txt" />
+    <Content Include="StrangerAgainText.txt" />
     <Content Include="tallestBuildings.txt" />
     <Content Include="usefulAcquaintances.txt" />
   </ItemGroup>
