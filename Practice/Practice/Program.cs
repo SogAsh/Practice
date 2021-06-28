@@ -198,7 +198,7 @@ namespace Practice
             Console.ReadKey();
         }
 
-        public static void Method51() //Уроки C# (C sharp) | #8 - Циклы, а также операторы Break и Continue
+        public static void Method5_1() //Уроки C# (C sharp) | #8 - Циклы, а также операторы Break и Continue
         {
             var result = " ";
             for (int j = 0; j < 100; j++)
@@ -505,29 +505,29 @@ namespace Practice
 
         public static void Method29(int a, int b, int c)
         {
-            if ((a < 0) || (a == 0 && b != 0))
-                return "Impossible";
-            else
-            {
-                if (a == 0 && b == 0)
-                    return c.ToString();
-                else
-                    return (-b / (2 * a)).ToString();
-            }
+            // if ((a < 0) || (a == 0 && b != 0))
+            //     return "Impossible";
+            // else
+            // {
+            //     if (a == 0 && b == 0)
+            //         return c.ToString();
+            //     else
+            //         return (-b / (2 * a)).ToString();
+            // }
         }
 
         public static void Method30()
         {
-            Console.WriteLine(Method18(1, 2, 3));
-            Console.WriteLine(Method18(0, 3, 2));
-            Console.WriteLine(Method18(1, -2, -3));
-            Console.WriteLine(Method18(5, 2, 1));
-            Console.WriteLine(Method18(4, 3, 2));
-            Console.WriteLine(Method18(0, 4, 5));
-
-            //А в этих случаях решение существует:
-            Console.WriteLine(Method18(0, 0, 2) != "Impossible");
-            Console.WriteLine(Method18(0, 0, 0) != "Impossible");
+            // Console.WriteLine(Method18(1, 2, 3));
+            // Console.WriteLine(Method18(0, 3, 2));
+            // Console.WriteLine(Method18(1, -2, -3));
+            // Console.WriteLine(Method18(5, 2, 1));
+            // Console.WriteLine(Method18(4, 3, 2));
+            // Console.WriteLine(Method18(0, 4, 5));
+            //
+            // //А в этих случаях решение существует:
+            // Console.WriteLine(Method18(0, 0, 2) != "Impossible");
+            // Console.WriteLine(Method18(0, 0, 0) != "Impossible");
         }
 
         public static void
@@ -747,8 +747,7 @@ namespace Practice
             RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] {42}, 0));
         }
 
-        public static void
-            Method51() //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
+        public static void Method51() //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
         {
             TicTacToe.Run("XXX OO. ...");
             TicTacToe.Run("OXO XO. .XO");
