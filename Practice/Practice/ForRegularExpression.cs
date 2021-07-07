@@ -39,7 +39,7 @@ namespace Practice
         /* Синтаксис регулярных выражений
 
          ТАКЖЕ см. тут Специальные символы https://ulearn.me/course/basicprogramming/Spetsial_nye_simvoly_cb90038b-c6ea-46cf-a181-6d572b2d517e 
-         
+         и тут https://docs.microsoft.com/ru-ru/dotnet/standard/base-types/regular-expression-language-quick-reference 
          * ^: соответствие должно начинаться в начале строки (например, выражение @"^пр\w*" соответствует слову "привет" в строке "привет мир")
 
             $: конец строки (например, выражение @"\w*ир$" соответствует слову "мир" в строке "привет мир", так как часть "ир" находится в самом конце)

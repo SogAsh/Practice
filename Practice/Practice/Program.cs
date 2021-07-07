@@ -241,6 +241,8 @@ namespace Practice
 
         public static void Method8() //Уроки C# (C sharp) | #9 - Массивы
         {
+            //List<List<int>> - https://youtu.be/6-cuxfD3lvg?t=253
+
             List<int> numbers = new List<int>();
 
             numbers.Add(11);
@@ -256,6 +258,94 @@ namespace Practice
             {
                 Console.WriteLine(numbers[i]);
             }
+        }
+
+        public static void Method8_1() //Про List<>
+        {
+            var list = new List<List<string>>();
+
+            string[] arr = {"1", "2", "3"};
+
+            for (int m = 0; m < arr.Length; m++)
+            {
+                var sublist = new List<string>();
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    sublist.Add(arr[i]);
+
+                    foreach (var l in sublist)
+                    {
+                        Console.WriteLine("sublist = " + l);
+                    }
+                }
+
+                Console.WriteLine("sublist =========END");
+
+                list.Add(sublist);
+
+                foreach (var b in list)
+                {
+                    Console.WriteLine("list =========[b]");
+                    foreach (var varb in b)
+                    {
+                        Console.WriteLine("list = " + varb);
+                    }
+
+                    Console.WriteLine("list =========END");
+                }
+            }
+        }
+
+        public static void Method8_2()
+        {
+            // Part 1: add rows and columns to the List.
+            List<List<int>> list = new List<List<int>>();
+            var rand = new Random();
+            for (int i = 0; i < 3; i++)
+            {
+                // Put some integers in the inner lists.
+                List<int> sublist = new List<int>();
+                int top = rand.Next(1, 4);
+                for (int v = 0; v < top; v++)
+                {
+                    sublist.Add(rand.Next(1, 5));
+                }
+
+                // Add the sublist to the top-level List.
+                list.Add(sublist);
+            }
+
+            Display(list);
+        }
+
+        static void Display(List<List<int>> list)
+        {
+            // Part 2: loop over and display everything in the List.
+            Console.WriteLine("Elements in list:");
+            foreach (var sublist in list)
+            {
+                foreach (var value in sublist)
+                {
+                    Console.Write(value);
+                    Console.Write(' ');
+                }
+
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine("******************");
+            // Part 3: display element.
+            Console.WriteLine("Element at 1, 0:");
+            Console.WriteLine(list[1][0]);
+            // Part 4: display total count.
+            int count = 0;
+            foreach (var sublist in list)
+            {
+                count += sublist.Count;
+            }
+
+            Console.WriteLine("Count of elements:");
+            Console.WriteLine(count);
         }
 
         public static void Method9() //Уроки C# (C sharp) | #9 - Массивы
@@ -747,7 +837,8 @@ namespace Practice
             RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] {42}, 0));
         }
 
-        public static void Method51() //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
+        public static void
+            Method51() //НЕ РЕШИЛ //ulearn Крестики-нолики https://ulearn.me/course/basicprogramming/_Krestiki_noliki_b4f3138d-5cdb-4f8a-9976-e0f4d379687a?autoplay=true
         {
             TicTacToe.Run("XXX OO. ...");
             TicTacToe.Run("OXO XO. .XO");
@@ -848,6 +939,10 @@ namespace Practice
 
             //Console.WriteLine(Encoding.UTF8.GetBytes("БЩФzw!").Length);
 
+            //Method8_1();
+            //Method8_2();
+
+            Method53();
 
             Console.ReadKey();
         }
