@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
+using NUnit.Framework;
 
 namespace Practice
 {
@@ -22,15 +24,15 @@ namespace Practice
 
             //преобразование типов
             num2 = num; //double = int
-            num = (int) (num2); //int = double
+            num = (int)(num2); //int = double
 
-            float d = (float) (num2); //float = double
+            float d = (float)(num2); //float = double
 
             long e = 30;
 
             byte a = 4; // 0 до 255
-            byte b = (byte) (a + 3);
-            short c = (short) (a + 3);
+            byte b = (byte)(a + 3);
+            short c = (short)(a + 3);
 
             Console.WriteLine("Hello\nEveryone" + "\n" + num2 + "\n" + num3 + "\n" + num4 + "\n" + stringVal);
         }
@@ -264,7 +266,7 @@ namespace Practice
         {
             var list = new List<List<string>>();
 
-            string[] arr = {"1", "2", "3"};
+            string[] arr = { "1", "2", "3" };
 
             for (int m = 0; m < arr.Length; m++)
             {
@@ -359,7 +361,7 @@ namespace Practice
 
         public static void Method10() //Уроки C# (C sharp) | #10 - Цикл foreach
         {
-            int[] numbers2 = {1, 2, 3, 4, 5};
+            int[] numbers2 = { 1, 2, 3, 4, 5 };
 
             foreach (var VARIABLE in numbers2)
             {
@@ -556,11 +558,11 @@ namespace Practice
         public static void Method24() //Ошибки преобразования типов
         {
             double pi = Math.PI;
-            float newPi = (float) pi;
+            float newPi = (float)pi;
             long tenThousand = 10000L;
             double tenThousandPi = newPi * tenThousand;
-            int roundedTenThousandPi = (int) Math.Round(tenThousandPi); //округление до ближайшего целого числа
-            int integerPartOfTenThousandPi = (int) tenThousandPi;
+            int roundedTenThousandPi = (int)Math.Round(tenThousandPi); //округление до ближайшего целого числа
+            int integerPartOfTenThousandPi = (int)tenThousandPi;
             Console.WriteLine(integerPartOfTenThousandPi);
             Console.WriteLine(roundedTenThousandPi);
         }
@@ -569,7 +571,7 @@ namespace Practice
         {
             double amount = 1.11;
             int peopleCount = 60;
-            int totalMoney = (int) Math.Round(amount * peopleCount); //округление до ближайшего целого числа
+            int totalMoney = (int)Math.Round(amount * peopleCount); //округление до ближайшего целого числа
             Console.WriteLine(totalMoney);
         }
 
@@ -751,9 +753,9 @@ namespace Practice
         public static void
             Method43() //ulearn Индекс максимума https://ulearn.me/course/basicprogramming/Indeks_maksimuma_043015a0-0b28-4435-8079-21e4ca8e6526
         {
-            double[] a = {1, 9, 9, 8, 9, 2, 2};
-            double[] b = {1, 2, 46, 14, 64, 64};
-            double[] d = {1, 2, 3};
+            double[] a = { 1, 9, 9, 8, 9, 2, 2 };
+            double[] b = { 1, 2, 46, 14, 64, 64 };
+            double[] d = { 1, 2, 3 };
             Console.WriteLine(MaximumIndex.MaxIndex(a));
             Console.WriteLine(MaximumIndex.MaxIndex(b));
             Console.WriteLine(MaximumIndex.MaxIndex(d));
@@ -762,15 +764,15 @@ namespace Practice
         public static void
             Method44() //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
         {
-            int[] a = {1, 2, 1, 1};
+            int[] a = { 1, 2, 1, 1 };
             Console.WriteLine(Count.GetElementCount(a, 1));
         }
 
         public static void
             Method45() //ulearn Поиск массива в массиве https://ulearn.me/course/basicprogramming/Poisk_massiva_v_massive_df8d1ca7-9aab-4816-8047-a834c6ca64d4
         {
-            int[] array = {1, 6, 2, 3, 4, 3, 4};
-            int[] subarray = {3, 4, 9};
+            int[] array = { 1, 6, 2, 3, 4, 3, 4 };
+            int[] subarray = { 3, 4, 9 };
             SearchArrayIntoArray.FindSubarrayStartIndex(array, subarray);
         }
 
@@ -819,14 +821,14 @@ namespace Practice
         {
             Console.WriteLine(NullOrNotNull.CheckFirstElement(null));
             Console.WriteLine(NullOrNotNull.CheckFirstElement(new int[0]));
-            Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] {1}));
-            Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] {0}));
+            Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] { 1 }));
+            Console.WriteLine(NullOrNotNull.CheckFirstElement(new[] { 0 }));
         }
 
         public static void
             Method50() //ulearn Возвести массив в степень https://ulearn.me/course/basicprogramming/Vozvesti_massiv_v_stepen__e3e45ec7-7bd0-4284-8ca1-0fbcb2fa0c21
         {
-            var arrayToPower = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+            var arrayToPower = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             // Метод PrintArray уже написан за вас
             RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 1));
             // если вы будете менять исходный массив, то следующие два теста сработают неверно:
@@ -834,7 +836,7 @@ namespace Practice
             RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(arrayToPower, 3));
             // не забывайте про частные случаи:
             RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new int[0], 1));
-            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] {42}, 0));
+            RaiseAnArayToADegree.PrintArray(RaiseAnArayToADegree.GetPoweredArray(new[] { 42 }, 0));
         }
 
         public static void
@@ -866,8 +868,8 @@ namespace Practice
             StrangerCipher.DecodeMessage(list.ToArray());
         }
 
-        public static void
-            Method53() //ulearn Полезные знакомства https://ulearn.me/course/basicprogramming/Poleznye_znakomstva_9a4d5ff4-2331-4bef-a3ee-88e54bec88c8?autoplay=true
+        //ulearn Полезные знакомства https://ulearn.me/course/basicprogramming/Poleznye_znakomstva_9a4d5ff4-2331-4bef-a3ee-88e54bec88c8?autoplay=true
+        public static void Method53()
         {
             List<string> addr = new List<string>();
             addr.Add("Sаsha:sasha1995@sasha.ru");
@@ -878,8 +880,16 @@ namespace Practice
             UsefulAcquaintances.OptimizeContacts(addr);
         }
 
-        public static void
-            Method54() //ulearn Закон Бенфорда https://ulearn.me/course/basicprogramming/Zakon_Benforda_66e248f0-2828-4e23-8d47-eb4e1cdb64b9
+        //ulearn Практика «Частотность N-грамм» https://ulearn.me/course/basicprogramming/Praktika_Chastotnost_N_gramm__eb894d4d-5854-4684-898b-5480895685e5
+        public static Dictionary<string, int> PracticeFrequencyNgram()
+        {
+            string text = "a b c d. b c d. e b c a f"; //d
+            var dict = ClassPracticeFrequencyNgram.MethodPracticeFrequencyNgram(text);
+            return dict;
+        }
+
+        //ulearn Закон Бенфорда https://ulearn.me/course/basicprogramming/Zakon_Benforda_66e248f0-2828-4e23-8d47-eb4e1cdb64b9
+        public static void Method54()
         {
             BenfordStatistics.GetBenfordStatistics("1");
             BenfordStatistics.GetBenfordStatistics("abc");
@@ -910,6 +920,53 @@ namespace Practice
             StrangerAgain.ApplyCommands(StrangerAgainText);
         }
 
+        public static void Method57(int n)
+            //ulearn Рекурсия https://ulearn.me/course/basicprogramming/Rekursiya_caec41b0-3166-40c0-9ded-3941c7f0b91d
+        {
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Console.Write(i.ToString() + " ");
+                Method57(i);
+            }
+        }
+
+        public static void Method57_1()
+        {
+            Method57(2);
+            Console.WriteLine();
+        }
+
+        //Исправить рекурсию https://ulearn.me/course/basicprogramming/Ispravit_rekursiyu_a5ba07a0-3b06-424b-989a-330137c1c05e
+        public static void Method58()
+        {
+            var items = new[] { 'a', 'b', 'c' };
+            FixRecursion.WriteReversed(items);
+        }
+
+        //Задание №18: техники белого ящика https://ulearn.me/course/testdesign/Zadanie_18_tekhniki_belogo_yashchika_88ad9b85-8aa5-4b9f-942b-3a47ffcdd60c
+        public static void Method59()
+        {
+            var x = 1;
+            var y = x;
+            var A = 11;
+            var B = 5;
+
+            if (A > 10)
+            {
+                x = 10;
+            }
+
+            if (B == 5)
+            {
+                y = 10;
+            }
+
+            else
+            {
+                y = 55;
+            }
+        }
+
         private static void Main(string[] args)
         {
             // int res = Method11(2, 3);
@@ -933,16 +990,18 @@ namespace Practice
             // NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
             // newByke.Method1(newNewByke);
             //
-            // FreePracties free = new FreePracties();
-            // free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
+            //FreePracties free = new FreePracties();
+            //free.MethodBooks(free); //в MethodBooks положить объект free, который реализует поведение IBook
             //т.е. мы кладем туда метод void PrintBook()???
 
             //Console.WriteLine(Encoding.UTF8.GetBytes("БЩФzw!").Length);
 
             //Method8_1();
             //Method8_2();
+            Method59();
+            //Method58();
 
-            Method53();
+            //PracticeFrequencyNgram();
 
             Console.ReadKey();
         }

@@ -13,8 +13,14 @@ namespace Practice
 
         public int Constructor //свойство
         {
-            get { return cource; }
-            set { cource = value; }
+            get
+            {
+                return cource;
+            }
+            set
+            {
+                cource = value;
+            }
         }
 
         public string Degree //свойство

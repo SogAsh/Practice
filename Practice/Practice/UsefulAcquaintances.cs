@@ -61,6 +61,7 @@ namespace Practice
             {
                 var parsedContact = e.Split(':');
                 var key = e.Substring(0, Math.Min(2, parsedContact[0].Length));
+                //var key = e.Substring(0, 2); ?? 
 
                 if (!dictionary.ContainsKey(key))
                 {
