@@ -12,7 +12,7 @@ namespace Practice
         public  static string ApplyCommands(string[] commands)
         {
             /*
-             * command.IndexOf(' ') для поиска индекса первого пробела
+             * command.IndexOf(' ') для поиска индекса, к примеру первого пробела
              * command.Substring для взятия подстроки
              * command.Replace("cat", "dog");  ??
              *
@@ -36,8 +36,8 @@ namespace Practice
                 if (index == 3)
                 {
                     var str2 = commands[i].Remove(0, index + 1);
-                    var a = builder.Length - int.Parse(str2);
                     var b = int.Parse(str2);
+                    var a = builder.Length - b;
                     builder.Remove(a, b);
                 }
             }
