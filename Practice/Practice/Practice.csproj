@@ -73,6 +73,16 @@
     <Compile Include="MethodsWanted.cs" />
     <Compile Include="NewSpectacle.cs" />
     <Compile Include="NullOrNotNull.cs" />
+    <Compile Include="OOP\City.cs" />
+    <Compile Include="OOP\DirectoryInfoAndFileInfo.cs" />
+    <Compile Include="OOP\GetAlbumsClass.cs" />
+    <Compile Include="OOP\MenuItem.cs" />
+    <Compile Include="OOP\Point.cs" />
+    <Compile Include="OOP\RandomExtensions.cs" />
+    <Compile Include="OOP\RightTriangle.cs" />
+    <Compile Include="OOP\Student.cs" />
+    <Compile Include="OOP\SuperBeautyImageFilter.cs" />
+    <Compile Include="OOP\ToStringExtensions.cs" />
     <Compile Include="PasswordStrengthValidator_Test.cs" />
     <Compile Include="RaiseAnArayToADegree.cs" />
     <Compile Include="ReplaceSeparators.cs" />
