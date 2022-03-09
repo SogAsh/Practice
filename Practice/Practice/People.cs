@@ -27,8 +27,8 @@ namespace Practice
 
         public void Print()
         {
-            Console.WriteLine("Print() name " + name);
-            Console.WriteLine("Print() age " + age);
+            Console.WriteLine("PrintExtensions() name " + name);
+            Console.WriteLine("PrintExtensions() age " + age);
         }
 }
 }

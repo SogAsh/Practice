@@ -30,7 +30,7 @@ namespace Practice
             public string name;
         }
 
-        public Print NewPrint() //Тип данных для выходного параметра - объектом класса Print
+        public Print NewPrint() //Тип данных для выходного параметра - объектом класса PrintExtensions
         {
             // Сигнатура метода (описание и структура) состоит из:
             // 1. Модификаторы доступны.
@@ -43,7 +43,7 @@ namespace Practice
 
         void Main() //этот метод будет считать типо основным методом Main (для примера)
         {
-            Print somePrint = NewPrint(); //Print или var, т.е. Print тут тип переменной
+            Print somePrint = NewPrint(); //PrintExtensions или var, т.е. PrintExtensions тут тип переменной
             somePrint.name = "";
         }
 

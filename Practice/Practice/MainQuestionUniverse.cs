@@ -8,7 +8,7 @@ namespace Practice
 {
     public class MainQuestionUniverse
     {
-        //Print(GetSquare(42)) Он желает знать квадрат этого числа
+        //PrintExtensions(GetSquare(42)) Он желает знать квадрат этого числа
         public static double GetSquare(int a)
         {
             var b = Math.Pow(a, 2);

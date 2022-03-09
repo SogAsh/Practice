@@ -57,6 +57,7 @@
     <Compile Include="AverageOfThree.cs" />
     <Compile Include="BenfordStatistics.cs" />
     <Compile Include="BlackArray.cs" />
+    <Compile Include="BumbleSort.cs" />
     <Compile Include="Byke.cs" />
     <Compile Include="Cars.cs" />
     <Compile Include="CatAndDog.cs" />
@@ -66,6 +67,8 @@
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="FixRecursion.cs" />
     <Compile Include="Frame.cs" />
+    <Compile Include="Inheritance\PrintClass.cs" />
+    <Compile Include="Inheritance\Transport.cs" />
     <Compile Include="KindEmploer.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="MainQuestionUniverse.cs" />

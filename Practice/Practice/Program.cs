@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using Practice.Inheritance;
 using Practice.OOP;
 
 namespace Practice
@@ -1030,8 +1031,15 @@ namespace Practice
         {
             DirectoryInfoAndFileInfo.NewMain3();
         }
+        
+        //Постановка проблемы https://ulearn.me/course/basicprogramming/Postanovka_problemy_a969ed1f-fc3e-4dcc-8d05-6015069e3dcf
+        public static void BumblesSortMethod()
+        {
+            var arr = new[] { 3, 2, 1 };
+            BumbleSort.BumbleSortMethod(arr);
+        }
 
-        private static void Main(string[] args)
+        private static void Main()
         {
             // int res = Method11(2, 3);
             // Console.WriteLine(res);
@@ -1048,7 +1056,7 @@ namespace Practice
             // RegularExpression();
             //
             // Byke newByke = new Byke();
-            // newByke.Print();
+            // newByke.PrintExtensions();
             // newByke.byke.name = "Hamer";
             //
             // NewNewByke newNewByke = new NewNewByke(); //объекта newNewByke класса NewNewByke - наследует от IByke поведение интерфейса
@@ -1067,14 +1075,14 @@ namespace Practice
             //NewMain();
             //CreateClass();
 
-            //Создание методов расширения https://ulearn.me/course/basicprogramming/Sozdanie_metodov_rasshireniya_06aa4e3e-c1f8-4895-ba1f-b7d5df22bb28
+            //ulearn оздание методов расширения https://ulearn.me/course/basicprogramming/Sozdanie_metodov_rasshireniya_06aa4e3e-c1f8-4895-ba1f-b7d5df22bb28
             // var arg1 = "100500";
             // Console.Write(arg1.ToInt() + "42".ToInt());
 
             //DirectoryInfo, FileInfo https://ulearn.me/course/basicprogramming/DirectoryInfo_FileInfo_57b32e15-beed-4e75-9aee-dabc6af80bd7
-            // DirectoryInfoAndFileInfoMethod();
+            //DirectoryInfoAndFileInfoMethod();
 
-            //Список директорий https://ulearn.me/course/basicprogramming/Spisok_direktoriy_24e64255-d0e2-418f-a86f-122d67117355
+            //ulearn Список директорий https://ulearn.me/course/basicprogramming/Spisok_direktoriy_24e64255-d0e2-418f-a86f-122d67117355
             //на ulearn падает
             // DirectoryInfo di = new DirectoryInfo(Environment.CurrentDirectory);
             // List<FileInfo> numbers = new List<FileInfo>();
@@ -1089,7 +1097,18 @@ namespace Practice
             // filter.ImageName = "Paris.jpg";
             // filter.GaussianParameter = 0.4;
             // filter.Run();
+            
+            //ulearn Всем печать! https://ulearn.me/course/basicprogramming/Vsem_pechat__039b257e-d0f4-4bdd-99a2-66ade6485165
+            // PrintClass.PrintExtensions(1, 2);
+            // PrintClass.PrintExtensions("a", 'b');
+            // PrintClass.PrintExtensions(1, "a");
+            // PrintClass.PrintExtensions(true, "a", 1);
 
+
+            BumblesSortMethod();
+            
+            
+            
             Console.ReadKey();
         }
     }

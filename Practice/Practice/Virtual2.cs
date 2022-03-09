@@ -12,7 +12,7 @@ namespace Practice
 
         public override void Print()
         {
-            base.Print(); //вызвать все что в оригинальном Print()
+            base.Print(); //вызвать все что в оригинальном PrintExtensions()
             Console.WriteLine("New overrided value");
         }
     }
