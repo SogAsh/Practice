@@ -1104,9 +1104,8 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-
-            BumblesSortMethod();
-            
+            //Постановка проблемы https://ulearn.me/course/basicprogramming/Postanovka_problemy_a969ed1f-fc3e-4dcc-8d05-6015069e3dcf
+            // BumblesSortMethod();
             
             
             Console.ReadKey();
