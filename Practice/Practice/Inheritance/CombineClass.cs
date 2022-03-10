@@ -35,7 +35,7 @@ namespace Practice.Inheritance
             Array result = null;
             int summaryLength = 0;
 
-            for (int i = 0; i < arrays.Length; i++) 
+            for (int i = 0; i < arrays.Length; i++)
             {
                 var elementType2 = arrays[i].GetType().GetElementType();
 
@@ -43,19 +43,17 @@ namespace Practice.Inheritance
                 {
                     return null;
                 }
-
                 summaryLength = summaryLength + arrays[i].Length;
-                
-                // arrays[i].CopyTo(result, i);
             }
-            
+
             result = Array.CreateInstance(elementType, summaryLength); //summaryLength = 4
 
             for (int i = 0; i < arrays.Length; i++)
             {
+                int temp = arrays[i].Length;
                 arrays[i].CopyTo(result, i);
             }
-            
+
             return result;
         }
     }
