@@ -1036,7 +1036,21 @@ namespace Practice
         public static void BumblesSortMethod()
         {
             var arr = new[] { 3, 2, 1 };
-            BumbleSort.BumbleSortMethod(arr);
+            BumbleSort.BumbleSortOLDMethod(arr);
+        }
+        
+        //Склейка массивов https://ulearn.me/course/basicprogramming/Skleyka_massivov_3a0b67fc-73c1-498a-b015-7ccc06b7ffc9
+        public static void PrintMethod()
+        {
+            var ints = new[] { 1, 2 };
+            var strings = new[] { "A", "B" };
+
+            CombineClass.Print(CombineClass.Combine(ints, ints));
+            // CombineClass.Print(CombineClass.Combine(ints, ints, ints));
+            // CombineClass.Print(CombineClass.Combine(ints));
+            // CombineClass.Print(CombineClass.Combine());
+            // CombineClass.Print(CombineClass.Combine(strings, strings));
+            // CombineClass.Print(CombineClass.Combine(ints, strings));
         }
 
         private static void Main()
@@ -1107,6 +1121,10 @@ namespace Practice
             //Постановка проблемы https://ulearn.me/course/basicprogramming/Postanovka_problemy_a969ed1f-fc3e-4dcc-8d05-6015069e3dcf
             // BumblesSortMethod();
             
+            //Склейка массивов
+            PrintMethod();
+            
+            // CopyToTest.PrintValues2();
             
             Console.ReadKey();
         }
