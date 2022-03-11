@@ -1045,8 +1045,8 @@ namespace Practice
             var ints = new[] { 1, 2 };
             var strings = new[] { "A", "B" };
 
-            CombineClass.Print(CombineClass.Combine(ints, ints));
-            // CombineClass.Print(CombineClass.Combine(ints, ints, ints));
+            // CombineClass.Print(CombineClass.Combine(ints, ints));
+            CombineClass.Print(CombineClass.Combine(ints, ints, ints));
             // CombineClass.Print(CombineClass.Combine(ints));
             // CombineClass.Print(CombineClass.Combine());
             // CombineClass.Print(CombineClass.Combine(strings, strings));

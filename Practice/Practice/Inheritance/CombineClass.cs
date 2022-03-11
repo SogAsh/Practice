@@ -43,15 +43,25 @@ namespace Practice.Inheritance
                 {
                     return null;
                 }
+
                 summaryLength = summaryLength + arrays[i].Length;
             }
 
             result = Array.CreateInstance(elementType, summaryLength); //summaryLength = 4
 
+            int rrr = 0;
+
             for (int i = 0; i < arrays.Length; i++)
             {
-                int temp = arrays[i].Length;
-                arrays[i].CopyTo(result, i);
+                var temp = arrays[i];
+
+                for (int j = 0; j < arrays.Length; j++)
+                {
+                    var fgfgee = temp.GetValue(j);
+
+                    result.SetValue(fgfgee, rrr);
+                    rrr = rrr + 1;
+                }
             }
 
             return result;
