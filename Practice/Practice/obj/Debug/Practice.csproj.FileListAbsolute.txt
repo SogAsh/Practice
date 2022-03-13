@@ -28,3 +28,12 @@ D:\StudyPlace\Practice\Practice\Practice\bin\Debug\testcentric.engine.metadata.d
 D:\StudyPlace\Practice\Practice\Practice\bin\Debug\nunit.framework.dll
 D:\StudyPlace\Practice\Practice\Practice\bin\Debug\nunit.framework.xml
 D:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CopyComplete
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\NUnit3.TestAdapter.dll
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\NUnit3.TestAdapter.pdb
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\nunit.engine.dll
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\nunit.engine.api.dll
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\nunit.engine.core.dll
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\testcentric.engine.metadata.dll
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\nunit.framework.dll
+E:\Работа\Workplace\Practice\Practice\Practice\bin\Debug\nunit.framework.xml
+E:\Работа\Workplace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CopyComplete
