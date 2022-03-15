@@ -1,14 +1,21 @@
 ﻿using System;
+using Practice.OOP;
 
 namespace Practice
 {
-    public class BumbleSort
+    class Pont
     {
-        public static void NewMain1()
+        public int X;
+        public int Y;
+    }
+    
+    public static class BumbleSort
+    {
+        public static void MakeBumbleSortMethod_WithNewMethod()
         {
             var intArray = new int[] {1, 3, 2};
             var stringArray = new string[] {"B", "A", "C"};
-            //Array array = (Array) intArray; //апкаст
+            Array array = (Array) intArray; //апкаст
 
             ProcessArray(intArray);
             ProcessArray(stringArray);
@@ -16,6 +23,14 @@ namespace Practice
             intArray.Swap(0, 1); //или ArrayExtensions.Swap(intArray, 0, 1);
             stringArray.Swap(0, 1); //или ArrayExtensions.Swap(stringArray, 0, 1);
 
+            var pointArray = new Point[]
+            {
+                new Point { X = 1, Y = 1 },
+                new Point { X = 3, Y = 3 },
+                new Point { X = 2, Y = 2 }
+            };
+            pointArray.BumbleSortNEWMethod(); //метод BumbleSortNEWMethod не должен быть у массива pointArray
+                                            //т.к. класс Point не реализует интерфейс IComparable
             intArray.BumbleSortNEWMethod();
             stringArray.BumbleSortNEWMethod();
         }
@@ -31,15 +46,14 @@ namespace Practice
             for (int i = array.Length - 1; i > 0; i--)
                 for (int j = 1; j <= i; j++)
                 {
-                    var element1 = (IComparable) array.GetValue(j); //object даункастим к IComparable
-                    var element0 = (IComparable) array.GetValue(j - 1);
+                    var element1 = (IComparable)array.GetValue(j); //object даункастим к IComparable
+                    var element0 = (IComparable)array.GetValue(j - 1);
                     if (element1.CompareTo(element0) < 0)
                     {
                         array.Swap(j-1, j);
                     }
                 }
         }
-
 
         public static void BumbleSortOLDMethod(int[] array)
         {
