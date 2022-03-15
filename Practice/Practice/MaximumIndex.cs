@@ -29,7 +29,8 @@ namespace Practice
          */
         public static object Min(Array array)
         {
-            object min = null;
+            var min = (IComparable)array.GetValue(array.Length - 1);
+            
             for (int i = array.Length - 1; i > 0; i--)
             {
                 var obj1 = (IComparable)array.GetValue(i);
@@ -39,8 +40,6 @@ namespace Practice
                 {
                     min = obj1;
                 }
-
-                else min = obj2;
             }
 
             return min;
