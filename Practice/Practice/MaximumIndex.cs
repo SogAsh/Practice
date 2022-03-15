@@ -21,6 +21,30 @@ namespace Practice
                     min = item;
             return min;
         }
+        
+        /*
+         *  Console.WriteLine(AverageOfThree.Min(new[] { 3, 6, 2, 4 }));
+            Console.WriteLine(AverageOfThree.Min(new[] { "B", "A", "C", "D" }));
+            Console.WriteLine(AverageOfThree.Min(new[] { '4', '2', 
+         */
+        public static object Min(Array array)
+        {
+            object min = null;
+            for (int i = array.Length - 1; i > 0; i--)
+            {
+                var obj1 = (IComparable)array.GetValue(i);
+                var obj2 = (IComparable)array.GetValue(i-1);
+                
+                if (obj1.CompareTo(obj2) < 0)
+                {
+                    min = obj1;
+                }
+
+                else min = obj2;
+            }
+
+            return min;
+        }
 
         public static int MaxIndex(double[] array)
         {
@@ -32,8 +56,10 @@ namespace Practice
 
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] > max) max = array[i];
-                else if (array[i] == array[i-1]) max = array[i-1];
+                if (array[i] > max) 
+                    max = array[i];
+                else if (array[i] == array[i-1]) 
+                    max = array[i-1];
             }
 
             return (int)Math.Round(max);

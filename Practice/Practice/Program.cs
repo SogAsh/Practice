@@ -706,7 +706,6 @@ namespace Practice
         //ulearn Среднее трех https://ulearn.me/course/basicprogramming/Srednee_trekh_937c4e64-7144-4f52-a75d-4bdc95bbde72?autoplay=true
         public static void Method36()
         {
-            AverageOfThree AverageOfThree = new AverageOfThree();
             Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
             Console.WriteLine(AverageOfThree.MiddleOf(12, 12, 11)); // => 12
             Console.WriteLine(AverageOfThree.MiddleOf(1, 1, 1)); // => 1
@@ -998,7 +997,7 @@ namespace Practice
         }
 
         //ulearn Основы ООП https://ulearn.me/course/basicprogramming/Klassy_9eb68528-17cb-4d7f-99f3-40210a8f6cef
-        public static void NewMain()
+        public static void Method60()
         {
             var newProgram = new NewProgram();
 
@@ -1013,7 +1012,7 @@ namespace Practice
         }
 
         //ulearn Создание классов https://ulearn.me/course/basicprogramming/Sozdanie_klassov_b0529ff4-52d1-4462-865b-89920b240f57
-        public static void CreateClass()
+        public static void Method61()
         {
             var city = new City();
             city.Name = "Ekaterinburg";
@@ -1027,19 +1026,19 @@ namespace Practice
         }
 
         //ulearn Создание классов https://ulearn.me/course/basicprogramming/Sozdanie_klassov_b0529ff4-52d1-4462-865b-89920b240f57
-        public static void DirectoryInfoAndFileInfoMethod()
+        public static void Method62()
         {
             DirectoryInfoAndFileInfo.NewMain3();
         }
         
         //Постановка проблемы https://ulearn.me/course/basicprogramming/Postanovka_problemy_a969ed1f-fc3e-4dcc-8d05-6015069e3dcf
-        public static void BumblesSortMethod()
+        public static void Method63()
         {
             BumbleSort.MakeBumbleSortMethod_WithNewMethod();
         }
         
         //Склейка массивов https://ulearn.me/course/basicprogramming/Skleyka_massivov_3a0b67fc-73c1-498a-b015-7ccc06b7ffc9
-        public static void PrintMethod()
+        public static void Method64()
         {
             var ints = new[] { 1, 2 };
             var strings = new[] { "A", "B" };
@@ -1050,6 +1049,24 @@ namespace Practice
             CombineClass.Print(CombineClass.Combine());
             CombineClass.Print(CombineClass.Combine(strings, strings));
             CombineClass.Print(CombineClass.Combine(ints, strings));
+        }
+        
+        //Снова среднее трех https://ulearn.me/course/basicprogramming/Snova_srednee_trekh_3dff4d01-45d2-4f80-889d-75ed651b31c2
+        public static void Method65()
+        {
+            Console.WriteLine(AverageOfThree.MiddleOfThree(2, 5, 4));
+            Console.WriteLine(AverageOfThree.MiddleOfThree(3, 1, 2));
+            Console.WriteLine(AverageOfThree.MiddleOfThree(3, 5, 9));
+            Console.WriteLine(AverageOfThree.MiddleOfThree("B", "Z", "A"));
+            Console.WriteLine(AverageOfThree.MiddleOfThree(3.45, 2.67, 3.12));
+        }
+        
+        //Поиск минимума https://ulearn.me/course/basicprogramming/Poisk_minimuma_9e6c6fe1-9282-4abc-853c-5ce6fb5bfa76?autoplay=true
+        public static void Method66()
+        {
+            Console.WriteLine(MaximumIndex.Min(new[] { 3, 6, 2, 4 }));
+            Console.WriteLine(MaximumIndex.Min(new[] { "B", "A", "C", "D" }));
+            Console.WriteLine(MaximumIndex.Min(new[] { '4', '2', '7' }));
         }
 
         private static void Main()
@@ -1117,13 +1134,8 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            //Постановка проблемы https://ulearn.me/course/basicprogramming/Postanovka_problemy_a969ed1f-fc3e-4dcc-8d05-6015069e3dcf
-            BumblesSortMethod();
+            Method66 ();
             
-            //Склейка массивов
-            //PrintMethod();
-            
-            // CopyToTest.PrintValues2();
             
             Console.ReadKey();
         }

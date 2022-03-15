@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    public class AverageOfThree
+    public static class AverageOfThree
     {
         /*
             Console.WriteLine(AverageOfThree.MiddleOf(5, 0, 100)); // => 5
@@ -23,11 +23,42 @@ namespace Practice
             if (a < b)
             {
                 if (b < c) return b;
-                return a > c ? a : c;
+                if (a > c) return a;
+                else return c;
             }
             if (a <= b) return a;
             if (a < c) return a;
-            return b > c ? b : c;
+            else return b > c ? b : c;
+        }
+
+        /*
+         * 	Console.WriteLine(MiddleOfThree(2, 5, 4));
+	        Console.WriteLine(MiddleOfThree(3, 1, 2));
+	        Console.WriteLine(MiddleOfThree(3, 5, 9));
+	        Console.WriteLine(MiddleOfThree("B", "Z", "A"));
+	        Console.WriteLine(MiddleOfThree(3.45, 2.67, 3.12))
+         */
+        public static IComparable MiddleOfThree(params IComparable[] array)
+        {
+            var a = (IComparable)array.GetValue(0);
+            var b = (IComparable)array.GetValue(1);
+            var c = (IComparable)array.GetValue(2);
+            
+            if (a.CompareTo(b) == -1) //a < b
+            {
+                if (b.CompareTo(c) == -1) //b < c
+                    return b;
+                if (a.CompareTo(c) == 1) //a > c
+                    return a;
+                else return c;
+            }
+            if (a.CompareTo(b) == -1 || a.CompareTo(b) == 0) //a <= b
+                return a;
+            if (a.CompareTo(c) == -1) //a < c
+                return a;
+            if (b.CompareTo(c) == 1)
+                return b;
+            else return c;
         }
     }
 }
