@@ -1,12 +1,36 @@
 ﻿using System;
+using System.Collections;
 using Practice.OOP;
 
 namespace Practice
 {
-    class Pont
+    class Pont : IComparable
     {
         public int X;
         public int Y;
+        public int CompareTo(object obj)
+        {
+            var point = (Point)obj; //даункаст 
+            var thisDistance = Math.Sqrt(X * X + Y * Y);
+            var thatDistance = Math.Sqrt(point.X * point.X + point.Y * point.Y);
+            
+            return thisDistance.CompareTo(thatDistance);
+        }
+    }
+
+    class DistanceToZeroComparer : IComparer
+    {
+        public int Compare(object x, object y)
+        {
+            double DistanceToZero(Point point)
+            {
+                return Math.Sqrt(point.X * point.X + point.Y * point.Y);
+            }
+            
+            var point1 = (Point)x;
+            var point2 = (Point)y;
+            return DistanceToZero(point1).CompareTo(point2);
+        }
     }
     
     public static class BumbleSort
@@ -29,10 +53,13 @@ namespace Practice
                 new Point { X = 3, Y = 3 },
                 new Point { X = 2, Y = 2 }
             };
-            pointArray.BumbleSortNEWMethod(); //метод BumbleSortNEWMethod не должен быть у массива pointArray
+            //pointArray.BumbleSortNEWMethod(); //метод BumbleSortNEWMethod не должен быть у массива pointArray
                                             //т.к. класс Point не реализует интерфейс IComparable
+                                            //но в итоге используем BumbleSortNEWMethodWithIComparer
             intArray.BumbleSortNEWMethod();
             stringArray.BumbleSortNEWMethod();
+            
+            pointArray.BumbleSortNEWMethodWithIComparer(new DistanceToZeroComparer());
         }
 
         public static void ProcessArray(Array array)
@@ -59,6 +86,20 @@ namespace Practice
          *  A CompareTo B = +1, т.е. A > B
          *  A CompareTo B = 0, т.е. B = A
          */ 
+        
+        public static void BumbleSortNEWMethodWithIComparer(this Array array, IComparer comparer) //сортирует любые массивы
+        {
+            for (int i = array.Length - 1; i > 0; i--)
+            for (int j = 1; j <= i; j++)
+            {
+                var element1 = array.GetValue(j); //object даункастим к IComparable
+                var element0 = array.GetValue(j - 1);
+                if (comparer.Compare(element1, element0) < 0)
+                {
+                    array.Swap(j-1, j);
+                }
+            }
+        }
 
         public static void BumbleSortOLDMethod(int[] array)
         {

@@ -1068,6 +1068,12 @@ namespace Practice
             Console.WriteLine(MaximumIndex.Min(new[] { "B", "A", "C", "D" }));
             Console.WriteLine(MaximumIndex.Min(new[] { '4', '2', '7' }));
         }
+        
+        //Сравнение книг https://ulearn.me/course/basicprogramming/Sravnenie_knig_bd1f8054-a372-4ea4-9f5a-2eee97cd2b71
+        // public static void Method67()
+        // {
+        //     Console.WriteLine(Inheritance.Book.CompareTo);
+        // }
 
         private static void Main()
         {
@@ -1134,7 +1140,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method66 ();
+            Method63();
             
             
             Console.ReadKey();

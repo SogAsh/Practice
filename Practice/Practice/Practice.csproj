@@ -66,6 +66,7 @@
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="FixRecursion.cs" />
     <Compile Include="Frame.cs" />
+    <Compile Include="Inheritance\Book.cs" />
     <Compile Include="Inheritance\BumbleSort.cs" />
     <Compile Include="Inheritance\CombineClass.cs" />
     <Compile Include="Inheritance\CopyToTest.cs" />
