@@ -63,6 +63,9 @@
     <Compile Include="Chess.cs" />
     <Compile Include="ClassPracticeFrequencyNgram.cs" />
     <Compile Include="Count.cs" />
+    <Compile Include="DataIntegrity\A.cs" />
+    <Compile Include="DataIntegrity\Statistics.cs" />
+    <Compile Include="DataIntegrity\ReportData.cs" />
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="FixRecursion.cs" />
     <Compile Include="Frame.cs" />
@@ -70,8 +73,10 @@
     <Compile Include="Inheritance\BumbleSort.cs" />
     <Compile Include="Inheritance\CombineClass.cs" />
     <Compile Include="Inheritance\CopyToTest.cs" />
+    <Compile Include="Inheritance\Triangle.cs" />
     <Compile Include="Inheritance\PrintClass.cs" />
     <Compile Include="Inheritance\Transport.cs" />
+    <Compile Include="Inheritance\VirtualPoint.cs" />
     <Compile Include="KindEmploer.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="MainQuestionUniverse.cs" />

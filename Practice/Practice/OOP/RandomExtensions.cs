@@ -14,7 +14,7 @@ namespace Practice.OOP
 
     public static class Program3
     {
-        static void NewMain3()
+        public static void NewMain3()
         {
             var rnd = new Random();
             Console.WriteLine(rnd.NextDouble(10, 20)); //метод NextDouble тут вызван как динамический

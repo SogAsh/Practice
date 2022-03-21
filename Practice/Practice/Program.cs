@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using Practice.DataIntegrity;
 using Practice.Inheritance;
 using Practice.OOP;
 
@@ -1075,6 +1076,37 @@ namespace Practice
         //     Console.WriteLine(Inheritance.Book.CompareTo);
         // }
 
+        //Виртуальные методы https://ulearn.me/course/basicprogramming/Virtual_nye_metody_4c2cab0b-93dd-48ce-88ac-5115d9655642
+        public static void Method68()
+        {
+            var ere = new Program33();
+            ere.Main3();
+        }
+        
+        //Метод ToString https://ulearn.me/course/basicprogramming/Metod_ToString_910105f8-f895-4608-9134-8b8d42d68e41
+        public static void Method69()
+        {
+            var triangle = new Triangle
+            {
+                A = new PointTriangle { X = 0, Y = 0 },
+                B = new PointTriangle { X = 1, Y = 2 },
+                C = new PointTriangle { X = 3, Y = 2 }
+            };
+            Console.WriteLine(triangle.ToString());
+        }
+        
+        public static void Method70()
+        {
+            Program32.Main33();
+        }
+        
+        //Отложенные ошибки https://ulearn.me/course/basicprogramming/Otlozhennye_oshibki_3bf0e956-3258-4a4d-ac42-926dc8cbad3b
+        public static void Method71()
+        {
+            UnsafeProgram.Main2323();
+        }
+
+
         private static void Main()
         {
             // int res = Method11(2, 3);
@@ -1140,7 +1172,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method63();
+            Method71();
             
             
             Console.ReadKey();
