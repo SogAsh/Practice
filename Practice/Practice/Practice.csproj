@@ -64,6 +64,9 @@
     <Compile Include="ClassPracticeFrequencyNgram.cs" />
     <Compile Include="Count.cs" />
     <Compile Include="DataIntegrity\A.cs" />
+    <Compile Include="DataIntegrity\Constructors.cs" />
+    <Compile Include="DataIntegrity\PropertyInsteadOfField.cs" />
+    <Compile Include="DataIntegrity\WriteStudent.cs" />
     <Compile Include="DataIntegrity\Statistics.cs" />
     <Compile Include="DataIntegrity\ReportData.cs" />
     <Compile Include="DeleteWhitespaces.cs" />

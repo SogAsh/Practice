@@ -1105,7 +1105,29 @@ namespace Practice
         {
             UnsafeProgram.Main2323();
         }
-
+        
+        //Не откладывать ошибки https://ulearn.me/course/basicprogramming/Ne_otkladyvat_oshibki_9eb0e353-bb50-4ae0-9064-e8bb86dd33de
+        public static void Method72()
+        {
+            var _srudent = new Students1()
+            {
+                Name = "Иван"
+            };
+            
+            DontDelayMistakes.FormatStudent(_srudent);
+        }
+        
+        //Свойство вместо поля https://ulearn.me/course/basicprogramming/Svoystvo_vmesto_polya_3adad7ba-a462-49d5-8677-7d1f8c85af33
+        public static void Method73()
+        {
+            PropertyInsteadOfField.Check1();
+        }
+        
+        //Конструкторы https://ulearn.me/course/basicprogramming/Konstruktory_87ee724d-8b7d-4d9e-b4f7-ea29c0f055ff
+        public static void Method74()
+        {
+            Programs123.Maintest1();
+        }
 
         private static void Main()
         {
@@ -1172,7 +1194,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method71();
+            Method74();
             
             
             Console.ReadKey();
