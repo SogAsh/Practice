@@ -4,9 +4,13 @@ namespace Practice.DataIntegrity
 {
     public class TournirInfo0
     {
-        public int TeamsCount { get; private set; }
-        public string[] TeamsNames { get; private set; }
-        public double[,] Scores { get; private set; }
+        public readonly int TeamsCount;
+        public readonly string[] TeamsNames;
+        public readonly double[,] Scores;
+        
+        // public readonly int TeamsCount { get; private set; }
+        // public readonly string[] TeamsNames { get; private set; }
+        // public readonly double[,] Scores { get; private set; }
 
         public TournirInfo0 (int teamsCount) //конструктор 1
         {

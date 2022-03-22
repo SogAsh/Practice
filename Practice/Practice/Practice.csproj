@@ -66,6 +66,8 @@
     <Compile Include="DataIntegrity\A.cs" />
     <Compile Include="DataIntegrity\Constructors.cs" />
     <Compile Include="DataIntegrity\PropertyInsteadOfField.cs" />
+    <Compile Include="DataIntegrity\Ratio.cs" />
+    <Compile Include="DataIntegrity\Vector.cs" />
     <Compile Include="DataIntegrity\WriteStudent.cs" />
     <Compile Include="DataIntegrity\Statistics.cs" />
     <Compile Include="DataIntegrity\ReportData.cs" />

@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
-using NUnit.Framework;
 using Practice.DataIntegrity;
 using Practice.Inheritance;
 using Practice.OOP;
@@ -1128,6 +1125,18 @@ namespace Practice
         {
             Programs123.Maintest1();
         }
+        
+        //Вектор https://ulearn.me/course/basicprogramming/vektor_6011b77e-b481-445d-9823-93e6a57fd757
+        public static void Method75()
+        {
+            Vector.Check();
+        }
+        
+        //Дробь https://ulearn.me/course/basicprogramming/Drob__deeef0d7-5d5c-481a-9a07-480641705efe
+        public static void Method76()
+        {
+            Ratio.Check(1, 2);
+        }
 
         private static void Main()
         {
@@ -1194,7 +1203,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method74();
+            Method76();
             
             
             Console.ReadKey();
