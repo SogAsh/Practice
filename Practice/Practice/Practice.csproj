@@ -129,6 +129,7 @@
     <Compile Include="TestClass.cs" />
     <Compile Include="TheCourseOfQueen.cs" />
     <Compile Include="TicTacToe.cs" />
+    <Compile Include="Training\Task1.cs" />
     <Compile Include="Univer.cs" />
     <Compile Include="UsefulAcquaintances.cs" />
     <Compile Include="Virtual2.cs" />
@@ -148,6 +149,7 @@
     <Content Include="tallestBuildings.txt" />
     <Content Include="usefulAcquaintances.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

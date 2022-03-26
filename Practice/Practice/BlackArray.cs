@@ -16,7 +16,8 @@ namespace Practice
 
             for (int i = 0; i < array.Length; i++) //0 1 2
             {
-                if (i % 2 == 0) b = array[i] = c + 2; //2
+                if (i % 2 == 0) 
+                    b = array[i] = c + 2; //2
                 
                 else c = array[i] = b + 2; //6
 

@@ -5,6 +5,7 @@ using System.IO;
 using Practice.DataIntegrity;
 using Practice.Inheritance;
 using Practice.OOP;
+using Practice.Training;
 
 namespace Practice
 {
@@ -1138,6 +1139,11 @@ namespace Practice
             Ratio.Check(1, 2);
         }
 
+        public static void Method77()
+        {
+            Task1.CountElements();
+        }
+
         private static void Main()
         {
             // int res = Method11(2, 3);
@@ -1190,20 +1196,20 @@ namespace Practice
             //     numbers.Add(VARIABLE);
             // }
             // GetAlbumsClass.GetAlbums(numbers);
-            
+
             //ulearn Рефакторинг статического класса https://ulearn.me/course/basicprogramming/Refaktoring_staticheskogo_klassa_a32d7a49-335a-4394-852d-10692e241efb
             // var filter = new SuperBeautyImageFilter();
             // filter.ImageName = "Paris.jpg";
             // filter.GaussianParameter = 0.4;
             // filter.Run();
-            
+
             //ulearn Всем печать! https://ulearn.me/course/basicprogramming/Vsem_pechat__039b257e-d0f4-4bdd-99a2-66ade6485165
             // PrintClass.PrintExtensions(1, 2);
             // PrintClass.PrintExtensions("a", 'b');
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method76();
+            Method77();
             
             
             Console.ReadKey();
