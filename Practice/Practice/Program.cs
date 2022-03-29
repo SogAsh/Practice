@@ -5,6 +5,7 @@ using System.IO;
 using Practice.DataIntegrity;
 using Practice.Inheritance;
 using Practice.OOP;
+using Practice.QueuesStacksGenerics;
 using Practice.Training;
 
 namespace Practice
@@ -1143,6 +1144,19 @@ namespace Practice
         {
             Task1.CountElements();
         }
+        
+        //Стеки и очереди https://ulearn.me/course/basicprogramming2/Steki_i_ocheredi_48016626-87ae-411d-ae97-f7a49e465dbc
+        public static void Method78()
+        {
+            Program123.Mian();
+        }
+        
+        //Очередь на связных списках https://ulearn.me/course/basicprogramming2/Ochered_na_svyaznykh_spiskakh_ee9122e3-6381-437d-9c6c-b8873bd5165f
+        public static void Method79()
+        {
+            Program1234.Main1234();
+        }
+
 
         private static void Main()
         {
@@ -1209,7 +1223,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method77();
+            Method79();
             
             
             Console.ReadKey();

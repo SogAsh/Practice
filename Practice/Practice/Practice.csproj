@@ -101,6 +101,8 @@
     <Compile Include="OOP\SuperBeautyImageFilter.cs" />
     <Compile Include="OOP\ToStringExtensions.cs" />
     <Compile Include="PasswordStrengthValidator_Test.cs" />
+    <Compile Include="QueuesStacksGenerics\QueueItem.cs" />
+    <Compile Include="QueuesStacksGenerics\Stack.cs" />
     <Compile Include="RaiseAnArayToADegree.cs" />
     <Compile Include="ReplaceSeparators.cs" />
     <Compile Include="Spectacle.cs" />
@@ -152,7 +154,6 @@
     <Content Include="tallestBuildings.txt" />
     <Content Include="usefulAcquaintances.txt" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
