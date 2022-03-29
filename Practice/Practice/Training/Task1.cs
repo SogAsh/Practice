@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace Practice.Training
 {
     /*
-     * Запрос ввод кол-ва массива
-     * Сами элементы
-     * Выход новый массив, с четными элементами массива
-     * Поменять местами макс и мин
+     * Запрос вводd длины массива
+     * Запрос самих элементов
+     * На выходе новый массив, с четными элементами массива
+     * Поменять местами макс и мин значения
      */
     public class Task1
     {
-        public static void CountElements()
+        public static int[]  CountElements()
         {
             Console.WriteLine("Введите длину масива");
             var countElements = Console.ReadLine();
@@ -54,11 +54,12 @@ namespace Practice.Training
             }
 
             var finishArray = SwapMaxMin(resultArray);
-
-            //for (int i = 0; i < finishArray.Length; i++)
-            //{
-            //    Console.WriteLine("Элемент массива: " + finishArray[i]);
-            //}
+            
+            for (int i = 0; i < finishArray.Length; i++)
+            {
+                Console.WriteLine("Элемент сменил местами: " + finishArray[i]);
+            }
+            return finishArray;
         }
 
         public static bool ChechEven(int a)
@@ -71,14 +72,33 @@ namespace Practice.Training
         public static int[] SwapMaxMin(int[] array)
         {
             var min = int.MaxValue;
-
+            var max = 0;
+            var minI = 0;
+            var maxI = 0;
+            
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] < min)
+                {
                     min = array[i];
+                    minI = i;
+                }
+                    
+                max = array[i];
+                maxI = i;
             }
+
+            array[minI] = max;
+            array[maxI] = min;
 
             return array;
         }
+        
+        // public static void Swap(Array array, int i, int j)
+        // {
+        //     object obj = array.GetValue(i);
+        //     array.SetValue(array.GetValue(j), i); //jое засовываем в iое
+        //     array.SetValue(obj, j); //iое засовываем в jое
+        // }
     }
 }

@@ -64,9 +64,10 @@
     <Compile Include="ClassPracticeFrequencyNgram.cs" />
     <Compile Include="Count.cs" />
     <Compile Include="DataIntegrity\A.cs" />
-    <Compile Include="DataIntegrity\Constructors.cs" />
+    <Compile Include="DataIntegrity\DinamicConstructors.cs" />
     <Compile Include="DataIntegrity\PropertyInsteadOfField.cs" />
     <Compile Include="DataIntegrity\Ratio.cs" />
+    <Compile Include="DataIntegrity\StaticConstructors.cs" />
     <Compile Include="DataIntegrity\Vector.cs" />
     <Compile Include="DataIntegrity\WriteStudent.cs" />
     <Compile Include="DataIntegrity\Statistics.cs" />
@@ -125,6 +126,8 @@
     <Compile Include="StrangerAgain.cs" />
     <Compile Include="StrangerCipher.cs" />
     <Compile Include="StructureClass.cs" />
+    <Compile Include="Structures\Struct.cs" />
+    <Compile Include="Structures\Struct2.cs" />
     <Compile Include="Taro.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="TheCourseOfQueen.cs" />

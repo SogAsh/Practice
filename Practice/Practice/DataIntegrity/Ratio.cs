@@ -8,7 +8,6 @@ namespace Practice.DataIntegrity
         public readonly double Numerator; //числитель
         public readonly double Denominator; //знаменатель
         private double value;
-
         public double Value
         {
             get
