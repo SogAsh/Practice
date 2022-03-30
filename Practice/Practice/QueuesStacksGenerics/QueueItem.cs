@@ -12,6 +12,8 @@ namespace Practice.QueuesStacksGenerics
     {
         QueueItem head; //экземпляр класса QueueItem
         QueueItem tail; //экземпляр класса QueueItem
+        
+        public bool IsEmpty { get { return head == null; } }
 
         public void Enqueue1(object value)
         {
@@ -52,16 +54,16 @@ namespace Practice.QueuesStacksGenerics
             var queue = new NewQueue();
             
             //для int
-            // for (int i = 0; i < 3; i++)
-            // {
-            //     queue.Enqueue1(i);
-            // }
-            //
-            // for (int i = 0; i < 3; i++)
-            // {
-            //     Console.WriteLine(queue.Dequeue1());
-            // }
+             for (int i = 0; i < 3; i++)
+             {
+                 queue.Enqueue1(i);
+             }
+             for (int i = 0; i < 3; i++)
+             {
+                 Console.WriteLine(queue.Dequeue1());
+             }
             
+            //string
             queue.Enqueue1("A");
             queue.Enqueue1("B");
             queue.Enqueue1("C");
@@ -69,6 +71,18 @@ namespace Practice.QueuesStacksGenerics
             {
                 Console.WriteLine(queue.Dequeue1());
             }
+            
+            //int
+            var myIntQueue = new NewQueue();
+            myIntQueue.Enqueue1(1);
+            myIntQueue.Enqueue1(2);
+            myIntQueue.Enqueue1(3);
+            var sum = 0;
+            while (!myIntQueue.IsEmpty)
+            {
+                sum += (int)myIntQueue.Dequeue1(); //даункаст object к int
+            }
+            Console.WriteLine(sum);
         }
     }
 }
