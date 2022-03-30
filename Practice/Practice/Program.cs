@@ -1222,6 +1222,7 @@ namespace Practice
             // PrintClass.PrintExtensions("a", 'b');
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
+            
 
             Method79();
             
