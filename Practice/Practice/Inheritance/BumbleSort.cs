@@ -59,7 +59,7 @@ namespace Practice
             intArray.BumbleSortNEWMethod();
             stringArray.BumbleSortNEWMethod();
             
-            pointArray.BumbleSortNEWMethodWithIComparer(new DistanceToZeroComparer());
+            pointArray.BumbleSortNEWNEWMethodWithIComparer(new DistanceToZeroComparer());
         }
 
         public static void ProcessArray(Array array)
@@ -87,16 +87,34 @@ namespace Practice
          *  A CompareTo B = 0, т.е. B = A
          */ 
         
-        public static void BumbleSortNEWMethodWithIComparer(this Array array, IComparer comparer) //сортирует любые массивы
+        public static void BumbleSortNEWNEWMethodWithIComparer(this Array array, IComparer comparer) //сортирует любые массивы
         {
             for (int i = array.Length - 1; i > 0; i--)
             for (int j = 1; j <= i; j++)
             {
-                var element1 = array.GetValue(j); //object даункастим к IComparable
                 var element0 = array.GetValue(j - 1);
+                var element1 = array.GetValue(j); //object даункастим к IComparable
                 if (comparer.Compare(element1, element0) < 0)
                 {
                     array.Swap(j-1, j);
+                }
+            }
+        }
+        
+        //Дженерики и сортировка массивов https://ulearn.me/course/basicprogramming2/Dzheneriki_i_sortirovka_massivov_93320c13-9170-4e84-8602-d4fa3bffb0f7
+        public static void BumbleSortNEWMethodWithIComparer(Array array)
+        {
+            for (int i = array.Length - 1; i > 0; i--)
+            for (int j = 1; j <= i; j++)
+            {
+                object element1 = array.GetValue(j - 1);
+                object element2 = array.GetValue(j); 
+                IComparable comparableElement1 = element1 as IComparable;
+                if (comparableElement1.CompareTo(element2) < 0)
+                {
+                    object temaporary = array.GetValue(j);
+                    array.SetValue(array.GetValue(j - 1), j);
+                    array.SetValue(temaporary, j - 1);
                 }
             }
         }

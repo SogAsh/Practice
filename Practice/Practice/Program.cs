@@ -782,12 +782,19 @@ namespace Practice
         //ulearn Индекс максимума https://ulearn.me/course/basicprogramming/Indeks_maksimuma_043015a0-0b28-4435-8079-21e4ca8e6526
         public static void Method43()
         {
-            double[] a = { 1, 9, 9, 8, 9, 2, 2 };
-            double[] b = { 1, 2, 46, 14, 64, 64 };
-            double[] d = { 1, 2, 3 };
-            Console.WriteLine(MaximumIndex.MaxIndex(a));
-            Console.WriteLine(MaximumIndex.MaxIndex(b));
-            Console.WriteLine(MaximumIndex.MaxIndex(d));
+            // double[] a0 = new double [0];
+            // double[] a = { 1, 9, 9, 8, 9, 2, 2 };
+            // double[] b = { 1, 2, 46, 14, 64, 64 };
+            // double[] d = { 1, 2, 3 };
+            // Console.WriteLine(MaximumIndex.MaxIndex(a0));
+            // Console.WriteLine(MaximumIndex.MaxIndex(a));
+            // Console.WriteLine(MaximumIndex.MaxIndex(b));
+            // Console.WriteLine(MaximumIndex.MaxIndex(d));
+            
+            Console.WriteLine(MaximumIndex.MaxGeneral(new int[0]));
+            Console.WriteLine(MaximumIndex.MaxGeneral(new[] { 3 }));
+            Console.WriteLine(MaximumIndex.MaxGeneral(new[] { 3, 1, 2 }));
+            Console.WriteLine(MaximumIndex.MaxGeneral(new[] { "A", "B", "C" }));
         }
 
         //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
@@ -979,17 +986,14 @@ namespace Practice
             var y = x;
             var A = 11;
             var B = 5;
-
             if (A > 10)
             {
                 x = 10;
             }
-
             if (B == 5)
             {
                 y = 10;
             }
-
             else
             {
                 y = 55;
@@ -1064,9 +1068,9 @@ namespace Practice
         //Поиск минимума https://ulearn.me/course/basicprogramming/Poisk_minimuma_9e6c6fe1-9282-4abc-853c-5ce6fb5bfa76?autoplay=true
         public static void Method66()
         {
-            Console.WriteLine(MaximumIndex.Min(new[] { 3, 6, 2, 4 }));
-            Console.WriteLine(MaximumIndex.Min(new[] { "B", "A", "C", "D" }));
-            Console.WriteLine(MaximumIndex.Min(new[] { '4', '2', '7' }));
+            Console.WriteLine(MaximumIndex.MinGeneral(new[] { 3, 6, 2, 4 }));
+            Console.WriteLine(MaximumIndex.MinGeneral(new[] { "B", "A", "C", "D" }));
+            Console.WriteLine(MaximumIndex.MinGeneral(new[] { '4', '2', '7' }));
         }
         
         //Сравнение книг https://ulearn.me/course/basicprogramming/Sravnenie_knig_bd1f8054-a372-4ea4-9f5a-2eee97cd2b71
@@ -1156,7 +1160,15 @@ namespace Practice
         {
             Program1234.Main1234();
         }
-
+        
+        //Максимум в массиве https://ulearn.me/course/basicprogramming2/Maksimum_v_massive_e3f3c78d-8d68-40cb-8b1e-a1912396dbef
+        public static void Method80()
+        {
+            // Console.WriteLine(MaxIndexGeneral.Max(new int[0]));
+            // Console.WriteLine(MaxIndexGeneral.Max(new[] { 3 }));
+            // Console.WriteLine(MaxIndexGeneral.Max(new[] { 3, 1, 2 }));
+            // Console.WriteLine(MaxIndexGeneral.Max(new[] { "A", "B", "C" }));
+        }
 
         private static void Main()
         {
@@ -1187,14 +1199,13 @@ namespace Practice
 
             //Console.WriteLine(Encoding.UTF8.GetBytes("БЩФzw!").Length);
 
-            //Method56();
-
             //PracticeFrequencyNgram();
 
             //NewMain();
             //CreateClass();
 
             //ulearn оздание методов расширения https://ulearn.me/course/basicprogramming/Sozdanie_metodov_rasshireniya_06aa4e3e-c1f8-4895-ba1f-b7d5df22bb28
+            //см. класс ToStringExtensions
             // var arg1 = "100500";
             // Console.Write(arg1.ToInt() + "42".ToInt());
 
@@ -1222,9 +1233,10 @@ namespace Practice
             // PrintClass.PrintExtensions("a", 'b');
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
-            
 
-            Method79();
+            // Method66();
+            Method43();
+            // Method80();
             
             
             Console.ReadKey();

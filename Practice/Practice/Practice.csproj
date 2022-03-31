@@ -101,8 +101,12 @@
     <Compile Include="OOP\SuperBeautyImageFilter.cs" />
     <Compile Include="OOP\ToStringExtensions.cs" />
     <Compile Include="PasswordStrengthValidator_Test.cs" />
+    <Compile Include="QueuesStacksGenerics\ComputeClass.cs" />
     <Compile Include="QueuesStacksGenerics\GenericClass.cs" />
+    <Compile Include="QueuesStacksGenerics\GenericSorterClass.cs" />
+    <Compile Include="QueuesStacksGenerics\MaxIndexGeneral.cs" />
     <Compile Include="QueuesStacksGenerics\QueueItem.cs" />
+    <Compile Include="QueuesStacksGenerics\SensorClass.cs" />
     <Compile Include="QueuesStacksGenerics\Stack.cs" />
     <Compile Include="QueuesStacksGenerics\StacksForParsingBrackets.cs" />
     <Compile Include="QueuesStacksGenerics\StacksForParsingBracketsRefactor.cs" />
