@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    public class MaximumIndex
+    public class MaxMinAndIndex
     {
         /*
          * Если в массиве максимальный элемент встречается несколько раз,
@@ -28,6 +28,8 @@ namespace Practice
             Console.WriteLine(AverageOfThree.Min(new[] { '4', '2', 
          */
         public static object MinGeneral(Array array) //метод поиска минимума в массиве для общего случая
+        //из темы про наследование
+        //Поиск минимума https://ulearn.me/course/basicprogramming/Poisk_minimuma_9e6c6fe1-9282-4abc-853c-5ce6fb5bfa76?autoplay=true
         {
             var min = (IComparable)array.GetValue(array.Length - 1);
             
@@ -84,6 +86,6 @@ namespace Practice
             return max;
         }
         
-        //MaxIndexGeneral см. тут QueuesStacksGenerics - MaxIndexGeneral
+        //MaxIndexGeneralClass см. тут QueuesStacksGenerics - MaxIndexGeneralClass
     }
 }

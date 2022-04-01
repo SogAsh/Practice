@@ -786,15 +786,15 @@ namespace Practice
             // double[] a = { 1, 9, 9, 8, 9, 2, 2 };
             // double[] b = { 1, 2, 46, 14, 64, 64 };
             // double[] d = { 1, 2, 3 };
-            // Console.WriteLine(MaximumIndex.MaxIndex(a0));
-            // Console.WriteLine(MaximumIndex.MaxIndex(a));
-            // Console.WriteLine(MaximumIndex.MaxIndex(b));
-            // Console.WriteLine(MaximumIndex.MaxIndex(d));
+            // Console.WriteLine(MaxMinAndIndex.MaxIndex(a0));
+            // Console.WriteLine(MaxMinAndIndex.MaxIndex(a));
+            // Console.WriteLine(MaxMinAndIndex.MaxIndex(b));
+            // Console.WriteLine(MaxMinAndIndex.MaxIndex(d));
             
-            Console.WriteLine(MaximumIndex.MaxGeneral(new int[0]));
-            Console.WriteLine(MaximumIndex.MaxGeneral(new[] { 3 }));
-            Console.WriteLine(MaximumIndex.MaxGeneral(new[] { 3, 1, 2 }));
-            Console.WriteLine(MaximumIndex.MaxGeneral(new[] { "A", "B", "C" }));
+            // Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new int[0]));
+            Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new[] { 3 }));
+            Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new[] { 3, 1, 2 }));
+            Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new[] { "A", "B", "C" }));
         }
 
         //ulearn Подсчет https://ulearn.me/course/basicprogramming/Podschet_9eb1a5c2-135d-49a5-a922-0f3f91566080
@@ -1068,9 +1068,9 @@ namespace Practice
         //Поиск минимума https://ulearn.me/course/basicprogramming/Poisk_minimuma_9e6c6fe1-9282-4abc-853c-5ce6fb5bfa76?autoplay=true
         public static void Method66()
         {
-            Console.WriteLine(MaximumIndex.MinGeneral(new[] { 3, 6, 2, 4 }));
-            Console.WriteLine(MaximumIndex.MinGeneral(new[] { "B", "A", "C", "D" }));
-            Console.WriteLine(MaximumIndex.MinGeneral(new[] { '4', '2', '7' }));
+            Console.WriteLine(MaxMinAndIndex.MinGeneral(new[] { 3, 6, 2, 4 }));
+            Console.WriteLine(MaxMinAndIndex.MinGeneral(new[] { "B", "A", "C", "D" }));
+            Console.WriteLine(MaxMinAndIndex.MinGeneral(new[] { '4', '2', '7' }));
         }
         
         //Сравнение книг https://ulearn.me/course/basicprogramming/Sravnenie_knig_bd1f8054-a372-4ea4-9f5a-2eee97cd2b71
@@ -1164,10 +1164,10 @@ namespace Practice
         //Максимум в массиве https://ulearn.me/course/basicprogramming2/Maksimum_v_massive_e3f3c78d-8d68-40cb-8b1e-a1912396dbef
         public static void Method80()
         {
-            // Console.WriteLine(MaxIndexGeneral.Max(new int[0]));
-            // Console.WriteLine(MaxIndexGeneral.Max(new[] { 3 }));
-            // Console.WriteLine(MaxIndexGeneral.Max(new[] { 3, 1, 2 }));
-            // Console.WriteLine(MaxIndexGeneral.Max(new[] { "A", "B", "C" }));
+            // Console.WriteLine(MaxIndexGeneralClass.Max(new int[0]));
+            // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { 3 }));
+            // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { 3, 1, 2 }));
+            // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { "A", "B", "C" }));
         }
 
         private static void Main()
