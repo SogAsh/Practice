@@ -6,8 +6,8 @@ namespace Practice.QueuesStacksGenerics
     {
         public static T MaxGeneralMethod<T> (T[] source) where T : IComparable
         {
-            // if (source.Length == 0) 
-            //     return new T(source);
+            if (source.Length == 0) 
+                return default(T); 
             
             T max = source[source.Length - 1];
 
