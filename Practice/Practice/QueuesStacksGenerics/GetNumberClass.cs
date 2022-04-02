@@ -5,7 +5,7 @@ namespace Practice.QueuesStacksGenerics
 {
     public class GetNumberClass
     {
-        public static int GetNumber1()
+        public static int TryGetNumber()
         {
             var rnd = new Random();
 
@@ -21,14 +21,7 @@ namespace Practice.QueuesStacksGenerics
         
         static void Main12345678()
         {
-            Console.WriteLine(GetNumber1());
-            
-            // var value = GetNumber1();
-            // if (value == -1)
-            //     
-            //     Console.WriteLine("Error");
-            // else
-            //     Console.WriteLine(value);
+            Console.WriteLine(TryGetNumber());
         }
     }
 }

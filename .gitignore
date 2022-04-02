@@ -6,3 +6,6 @@
 *.tmp
 *.xml
 Practice/Practice/Practice.csproj
+/Practice/Practice/Practice.csproj
+Practice/Practice/Practice.csproj
+*csproj

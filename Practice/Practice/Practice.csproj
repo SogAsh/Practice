@@ -105,6 +105,10 @@
     <Compile Include="QueuesStacksGenerics\GenericClass.cs" />
     <Compile Include="QueuesStacksGenerics\GenericSorterClass.cs" />
     <Compile Include="QueuesStacksGenerics\GetNumberClass.cs" />
+    <Compile Include="QueuesStacksGenerics\GetNumberClass2.cs" />
+    <Compile Include="QueuesStacksGenerics\GetNumberClass3.cs" />
+    <Compile Include="QueuesStacksGenerics\GetNumberClass4.cs" />
+    <Compile Include="QueuesStacksGenerics\GetNumberClass5.cs" />
     <Compile Include="QueuesStacksGenerics\MaxIndexGeneralClass.cs" />
     <Compile Include="QueuesStacksGenerics\QueueItem.cs" />
     <Compile Include="QueuesStacksGenerics\SensorClass.cs" />
