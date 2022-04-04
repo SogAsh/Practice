@@ -7,6 +7,7 @@ using Practice.Inheritance;
 using Practice.OOP;
 using Practice.QueuesStacksGenerics;
 using Practice.Training;
+using Practice.yieldReturn;
 
 namespace Practice
 {
@@ -1169,6 +1170,12 @@ namespace Practice
             // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { 3, 1, 2 }));
             // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { "A", "B", "C" }));
         }
+        
+        //foreach, IEnumerable и IEnumerator https://ulearn.me/course/basicprogramming2/foreach_IEnumerable_i_IEnumerator_49c485c2-d2a7-4362-a473-5757719bd002
+        public static void Method81()
+        {
+            Programc1234Generic.Mainc1234();
+        }
 
         private static void Main()
         {
@@ -1234,9 +1241,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            // Method66();
-            Method79();
-            // Method80();
+            Method81();
             
             
             Console.ReadKey();

@@ -151,6 +151,7 @@
     <Compile Include="UsefulAcquaintances.cs" />
     <Compile Include="Virtual2.cs" />
     <Compile Include="Virtual.cs" />
+    <Compile Include="yieldReturn\ForeachIEnumerableIEnumerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
