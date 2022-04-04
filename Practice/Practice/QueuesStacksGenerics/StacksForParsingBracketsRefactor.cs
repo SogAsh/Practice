@@ -5,6 +5,37 @@ using System.Linq;
 
 namespace Practice.QueuesStacksGenerics
 {
+    public class Program123456
+    {
+        public static bool Check(string str)
+        {
+            var stack = new Stack<char>();
+            var dict = new Dictionary<char, char>();
+            dict['('] = ')';
+            dict['['] = ']';
+            dict['{'] = '}';
+            dict['<'] = '>';
+
+            foreach (var symbol in str)
+            {
+                if (dict.Keys.Contains(symbol))
+                    stack.Push(symbol);
+                else if (dict.Values.Contains(symbol))
+                {
+                    if (stack.Count == 0)
+                        return false;
+                    var openBracket = stack.Pop();
+                    if (dict[openBracket] != symbol)
+                        return false;
+                }
+                else return false;
+            }
+            if (stack.Count == 0) return true;
+            else return false;
+            //или return stack.Count == 0;
+        }
+    }
+    
     [TestFixture]
     public class StacksForParsingBracketsRefactor
     {
@@ -48,37 +79,6 @@ namespace Practice.QueuesStacksGenerics
         public void DifferentBrackets()
         {
             Assert.AreEqual(true, Program123456.Check("(){}[]<>"));
-        }
-    }
-
-    public class Program123456
-    {
-        public static bool Check(string str)
-        {
-            var stack = new Stack<char>();
-            var dict = new Dictionary<char, char>();
-            dict['('] = ')';
-            dict['['] = ']';
-            dict['{'] = '}';
-            dict['<'] = '>';
-
-            foreach (var symbol in str)
-            {
-                if (dict.Keys.Contains(symbol))
-                    stack.Push(symbol);
-                else if (dict.Values.Contains(symbol))
-                {
-                    if (stack.Count == 0)
-                        return false;
-                    var openBracket = stack.Pop();
-                    if (dict[openBracket] != symbol)
-                        return false;
-                }
-                else return false;
-            }
-            if (stack.Count == 0) return true;
-            else return false;
-            //или return stack.Count == 0;
         }
     }
 }

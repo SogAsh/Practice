@@ -14,7 +14,7 @@ namespace Practice.Training
      */
     public class Task1
     {
-        public static int[]  CountElements()
+        public static int[] CountElements()
         {
             Console.WriteLine("Введите длину масива");
             var countElements = Console.ReadLine();
@@ -50,7 +50,7 @@ namespace Practice.Training
 
             for (int i = 0; i < resultArray.Length; i++)
             {
-                Console.WriteLine("Элемент массива: " + resultArray[i]);
+                Console.WriteLine("Четный элемент массива: " + resultArray[i]);
             }
 
             var finishArray = SwapMaxMin(resultArray);
@@ -69,23 +69,26 @@ namespace Practice.Training
             return false;
         }
 
-        public static int[] SwapMaxMin(int[] array)
+        public static int[] SwapMaxMin(int[] array) //4, 2 
         {
-            var min = int.MaxValue;
-            var max = 0;
+            var min = array[0];
+            var max = array[0];
             var minI = 0;
             var maxI = 0;
             
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] < min)
                 {
                     min = array[i];
                     minI = i;
                 }
-                    
-                max = array[i];
-                maxI = i;
+
+                else if (array[i] > max)
+                {
+                    max = array[i];
+                    maxI = i;
+                }
             }
 
             array[minI] = max;

@@ -4,7 +4,8 @@ namespace Practice.QueuesStacksGenerics
 {
     public static class GenericSorterClass
     {
-        public static void Sort<T> (this T[] array) where T : IComparable //<T> дженерик параметр определяемый из аргументов метода при его вызове (пример <int>)
+        public static void Sort<T> (this T[] array) where T : IComparable 
+        //<T> дженерик параметр определяемый из аргументов метода при его вызове (пример <int>)
         //this - extension методы
         {
             for (int i = array.Length - 1; i > 0; i--)

@@ -59,15 +59,12 @@ namespace Practice.QueuesStacksGenerics
             Console.WriteLine(stack.Pop());
 
             var queue = new Queue();
-            for (int i = 0; i < 3; i++)
-            {
-                queue.Enqueue(i);
-            }
-
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine(queue.Dequeue());
-            }
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
         }
     }
 }

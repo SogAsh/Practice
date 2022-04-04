@@ -4,6 +4,44 @@ using NUnit.Framework;
 
 namespace Practice.QueuesStacksGenerics
 {
+    public class Program12345
+    {
+        public static bool Check(string str)
+        {
+            var stack = new Stack<char>();
+            foreach (var symbol in str)
+            {
+                char openBracket;
+                switch (symbol)
+                {
+                    case '(':
+                        case '[':
+                        stack.Push(symbol);
+                        break;
+                     case ')':
+                         if (stack.Count == 0) 
+                             return false;
+                         openBracket = stack.Pop();
+                         if (openBracket != '(') 
+                             return false;
+                         break;  
+                    case ']':
+                        if (stack.Count == 0) 
+                            return false;
+                        openBracket = stack.Pop();
+                        if (openBracket != '[') 
+                            return false;
+                        break;
+                    default:
+                        return false;
+                }
+            }
+            if (stack.Count == 0) return true;
+            else return false;
+            //или return stack.Count == 0;
+        }
+    }
+    
     [TestFixture]
     public class StacksForParsingBrackets
     {
@@ -41,44 +79,6 @@ namespace Practice.QueuesStacksGenerics
         public void RightSequence()
         {
             Assert.AreEqual(true, Program12345.Check("(([])([][]()))"));
-        }
-    }
-
-    public class Program12345
-    {
-        public static bool Check(string str)
-        {
-            var stack = new Stack<char>();
-            foreach (var symbol in str)
-            {
-                char openBracket;
-                switch (symbol)
-                {
-                    case '(':
-                        case '[':
-                        stack.Push(symbol);
-                        break;
-                     case ')':
-                         if (stack.Count == 0) 
-                             return false;
-                         openBracket = stack.Pop();
-                         if (openBracket != '(') 
-                             return false;
-                         break;  
-                    case ']':
-                        if (stack.Count == 0) 
-                            return false;
-                        openBracket = stack.Pop();
-                        if (openBracket != '[') 
-                            return false;
-                        break;
-                    default:
-                        return false;
-                }
-            }
-            if (stack.Count == 0) return true;
-            else return false;
-            //или return stack.Count == 0;
         }
     }
 }

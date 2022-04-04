@@ -20,16 +20,22 @@ namespace Practice.QueuesStacksGenerics
 
         public void EnqueueGeneric(T value)
         {
-            var item = new QueueItemGeneric<T>
-            {
-                Value = value
-            };
-
-            if (head == null) //??
-                tail = head = item; //если всего 1 item
+            if (head == null) //пустой список (изначально), то следующее действие (EnqueueGeneric) добавление первого элемента
+                             //тут и tail = null
+                //если всего 1 item
+                head = tail = new QueueItemGeneric<T>
+                {
+                    Value = value,
+                    Next = null
+                };
 
             else //если уже появился 2 item
             {
+                var item = new QueueItemGeneric<T>
+                {
+                    Value = value, 
+                    Next = null
+                };
                 tail.Next = item; //кто стоит за мной в очереди
                 tail = item; //очередь QueueItem начинает указывать на последнего (2го Iteam)
             }
@@ -38,7 +44,7 @@ namespace Practice.QueuesStacksGenerics
         public T DequeueGeneric()
         {
             if (head == null)
-                throw new InvalidOperationException();
+                throw new InvalidOperationException(); //т.е. нечего удалять
 
             var result = head.Value;
             head = head.Next;
@@ -58,12 +64,15 @@ namespace Practice.QueuesStacksGenerics
             myIntQueue.EnqueueGeneric(1);
             myIntQueue.EnqueueGeneric(2);
             myIntQueue.EnqueueGeneric(3);
+            myIntQueue.DequeueGeneric();
+            myIntQueue.DequeueGeneric();
+            myIntQueue.DequeueGeneric();
             //myIntQueue.EnqueueGeneric("Ooops");
-            
+
             var sum = 0;
             while (!myIntQueue.IsEmpty)
             {
-                sum += myIntQueue.DequeueGeneric(); 
+                sum += myIntQueue.DequeueGeneric();
             }
 
             Console.WriteLine(sum);
