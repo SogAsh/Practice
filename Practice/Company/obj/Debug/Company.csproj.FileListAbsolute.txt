@@ -1,0 +1,6 @@
+D:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.AssemblyReference.cache
+D:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.CoreCompileInputs.cache
+D:\StudyPlace\Practice\Practice\Company\bin\Debug\Company.exe
+D:\StudyPlace\Practice\Practice\Company\bin\Debug\Company.pdb
+D:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.exe
+D:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.pdb

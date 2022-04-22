@@ -962,24 +962,16 @@ namespace Practice
         {
             for (int i = n - 1; i >= 0; i--)
             {
-                Console.Write(i.ToString() + " ");
+                Console.Write(i + " ");
                 Method57(i);
             }
         }
-
-        public static void Method57_1()
-        {
-            Method57(2);
-            Console.WriteLine();
-        }
-
         //Исправить рекурсию https://ulearn.me/course/basicprogramming/Ispravit_rekursiyu_a5ba07a0-3b06-424b-989a-330137c1c05e
         public static void Method58()
         {
             var items = new[] { 'a', 'b', 'c' };
-            FixRecursion.WriteReversed(items);
+            FixRecursion.WriteReversed(items, 0);
         }
-
         //Задание №18: техники белого ящика https://ulearn.me/course/testdesign/Zadanie_18_tekhniki_belogo_yashchika_88ad9b85-8aa5-4b9f-942b-3a47ffcdd60c
         public static void Method59()
         {
@@ -1000,7 +992,6 @@ namespace Practice
                 y = 55;
             }
         }
-
         //ulearn Основы ООП https://ulearn.me/course/basicprogramming/Klassy_9eb68528-17cb-4d7f-99f3-40210a8f6cef
         public static void Method60()
         {
@@ -1241,7 +1232,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method81();
+            Method58();
             
             
             Console.ReadKey();

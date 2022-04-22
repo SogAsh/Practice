@@ -9,7 +9,7 @@ namespace Practice
         public string name;
         public int age;
 
-        public People() //конструктор
+        public People() //конструктор по умолчанию не должен иметь параметров на вход
         {
             name = "Brad";
             age = 18;
