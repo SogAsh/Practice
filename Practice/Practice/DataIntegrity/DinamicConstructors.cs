@@ -26,7 +26,8 @@ namespace Practice.DataIntegrity
             Scores = new double[TeamsCount, TeamsCount];
         }
         
-        public TournirInfo0() : this(5) //конструктор 3, который вызывает конструктор 1
+        public TournirInfo0() : this(5) //конструктор 3 по умолчанию, который вызывает конструктор 1, потому что передаваемое значение = 5
+                                                //т.е. мы ищем конструктор в который передается int
         {
         }
     }

@@ -6,7 +6,8 @@ namespace Practice.OOP
     public static class RandomExtensions
     {
         public static double NextDouble(this Random rnd, double min, double max) //this значит, что я хочу статический метод
-                                                            //NextDouble присоединить как динамический метод к классу Random
+                                                                                //this значит, что это метод расширения
+                                                                                //NextDouble присоединить как динамический метод к классу Random
         {
             return rnd.NextDouble() * (max - min) + min;
         }
@@ -17,9 +18,9 @@ namespace Practice.OOP
         public static void NewMain3()
         {
             var rnd = new Random();
-            Console.WriteLine(rnd.NextDouble(10, 20)); //метод NextDouble тут вызван как динамический
+            Console.WriteLine(rnd.NextDouble(10, 20)); //метод NextDouble тут вызван как динамический (для этого нужен this)
             //или так
-            Console.WriteLine(RandomExtensions.NextDouble(rnd, 10, 20));
+            Console.WriteLine(RandomExtensions.NextDouble(rnd, 10, 20));  //метод NextDouble тут вызван как статически
         }
     }
 }
