@@ -62,7 +62,8 @@ namespace Practice.yieldReturn
 
         public IEnumerator<T> GetEnumerator()
         {
-            return new QueueEnumerator<T>(this);
+            return new QueueEnumerator<T>(this); //передав в QueueEnumerator<T> - this, т.е. передав тот объект их которого
+                                                 //вызывается (данамически) метод QueueEnumerator<T> 
         }
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -73,23 +74,23 @@ namespace Practice.yieldReturn
         public class QueueEnumerator<T> : IEnumerator<T>
         {
             Queue<T> queue;
-            QueueItem<T> iteam;
+            QueueItem<T> item;
 
             public QueueEnumerator(Queue<T> queue)
             {
-                this.queue = this.queue;
-                iteam = null;
+                this.queue = queue;
+                item = null;
             }
 
-            public T Current => iteam.Value;
+            public T Current => item.Value;
 
             public bool MoveNext()
             {
-                if (iteam == null)
-                    iteam = queue.head;
+                if (item == null)
+                    item = queue.head;
                 else
-                    iteam = iteam.Next;
-                return iteam != null;
+                    item = item.Next;
+                return item != null;
             }
 
             #region MyRegion

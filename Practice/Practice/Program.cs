@@ -1237,7 +1237,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method82();
+            Method81();
             
             
             Console.ReadKey();
