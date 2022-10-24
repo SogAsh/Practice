@@ -20,7 +20,6 @@ namespace Practice.yieldReturn
         public bool IsEmpty => head == null;
 
         #region MyRegion
-
         public void EnqueueGeneric(T value)
         {
             if (head == null) //пустой список (изначально), то следующее действие (EnqueueGeneric) добавление первого элемента
@@ -60,52 +59,22 @@ namespace Practice.yieldReturn
 
         #endregion
 
-        public IEnumerator<T> GetEnumerator()
-        {
-            return new QueueEnumerator<T>(this); //передав в QueueEnumerator<T> - this, т.е. передав тот объект их которого
-                                                 //вызывается (данамически) метод QueueEnumerator<T> 
-        }
-
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
-
-        public class QueueEnumerator<T> : IEnumerator<T>
+        public IEnumerator<T> GetEnumerator()
         {
-            Queue<T> queue;
-            QueueItem<T> item;
+            // return new QueueEnumerator<T>(this); //передав в QueueEnumerator<T> - this, т.е. передав тот объект их которого
+            //вызывается (данамически) метод QueueEnumerator<T> 
 
-            public QueueEnumerator(Queue<T> queue)
+            var current = head;
+            while (current != null)
             {
-                this.queue = queue;
-                item = null;
+                yield return current.Value; //yield - метод из которого можно выйти с какимто значением
+                                            //а потом вернуться и продолжить
+                current = current.Next;
             }
-
-            public T Current => item.Value;
-
-            public bool MoveNext()
-            {
-                if (item == null)
-                    item = queue.head;
-                else
-                    item = item.Next;
-                return item != null;
-            }
-
-            #region MyRegion
-
-            public void Dispose()
-            {
-            }
-
-            public void Reset()
-            {
-            }
-
-            object IEnumerator.Current => Current;
-
-            #endregion
         }
     }
 

@@ -152,6 +152,7 @@
     <Compile Include="Virtual2.cs" />
     <Compile Include="Virtual.cs" />
     <Compile Include="yieldReturn\ForeachIEnumerableIEnumerator.cs" />
+    <Compile Include="yieldReturn\Sequences.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
