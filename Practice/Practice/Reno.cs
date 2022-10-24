@@ -15,7 +15,7 @@ namespace Practice
         }
 
         private string sex;
-        public Reno(string name, string sex) : base(name) //конструктор. base значит что конструктор наследует конструктор из класса от которого наследуется Reno
+        public Reno(string sex, string name) : base(name) //конструктор. base значит что конструктор наследует конструктор из класса от которого наследуется Reno
                                                         //т.е. Cars
         {
             this.sex = sex;

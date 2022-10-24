@@ -1167,6 +1167,11 @@ namespace Practice
         {
             Programc1234Generic.Mainc1234();
         }
+        
+        public static void Method82()
+        {
+            Program3.NewMain3();
+        }
 
         private static void Main()
         {
@@ -1202,7 +1207,7 @@ namespace Practice
             //NewMain();
             //CreateClass();
 
-            //ulearn оздание методов расширения https://ulearn.me/course/basicprogramming/Sozdanie_metodov_rasshireniya_06aa4e3e-c1f8-4895-ba1f-b7d5df22bb28
+            //ulearn cоздание методов расширения https://ulearn.me/course/basicprogramming/Sozdanie_metodov_rasshireniya_06aa4e3e-c1f8-4895-ba1f-b7d5df22bb28
             //см. класс ToStringExtensions
             // var arg1 = "100500";
             // Console.Write(arg1.ToInt() + "42".ToInt());
@@ -1232,7 +1237,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method58();
+            Method82();
             
             
             Console.ReadKey();

@@ -4,3 +4,10 @@ D:\StudyPlace\Practice\Practice\Company\bin\Debug\Company.exe
 D:\StudyPlace\Practice\Practice\Company\bin\Debug\Company.pdb
 D:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.exe
 D:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.pdb
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\Company.exe
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\Company.pdb
+E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.AssemblyReference.cache
+E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.SuggestedBindingRedirects.cache
+E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.CoreCompileInputs.cache
+E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.exe
+E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.pdb
