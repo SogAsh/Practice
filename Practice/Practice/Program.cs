@@ -1162,15 +1162,21 @@ namespace Practice
             // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { "A", "B", "C" }));
         }
         
+        //Методы расширения
+        public static void Method82()
+        {
+            Program3.NewMain3();
+        }
+        
         //foreach, IEnumerable и IEnumerator https://ulearn.me/course/basicprogramming2/foreach_IEnumerable_i_IEnumerator_49c485c2-d2a7-4362-a473-5757719bd002
         public static void Method81()
         {
             Programc1234Generic.Mainc1234();
         }
         
-        public static void Method82()
+        public static void Method83()
         {
-            Program3.NewMain3();
+            Program12345678.Main12345678();
         }
 
         private static void Main()
@@ -1237,7 +1243,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method81();
+            Method83();
             
             
             Console.ReadKey();

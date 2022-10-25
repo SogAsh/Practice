@@ -17,8 +17,6 @@ namespace Practice.yieldReturn
 
         private IEnumerable<T> _enumerableImplementation;
 
-        public bool IsEmpty => head == null;
-
         #region MyRegion
         public void EnqueueGeneric(T value)
         {
