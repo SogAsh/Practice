@@ -20,8 +20,6 @@ namespace Practice.yieldReturn
                     current = newValue;
                     yield return current;
                 }
-
-                ;
             }
         }
     }

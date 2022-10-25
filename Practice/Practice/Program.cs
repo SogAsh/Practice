@@ -1178,6 +1178,12 @@ namespace Practice
         {
             Program12345678.Main12345678();
         }
+        
+        //Генерация последовательности
+        public static void Method84()
+        {
+            GenerateSequences.GenerateSequencesMain();
+        }
 
         private static void Main()
         {
@@ -1243,7 +1249,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method83();
+            Method84();
             
             
             Console.ReadKey();
