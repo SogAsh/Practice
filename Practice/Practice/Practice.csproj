@@ -154,6 +154,7 @@
     <Compile Include="yieldReturn\ForeachIEnumerableIEnumerator.cs" />
     <Compile Include="yieldReturn\GenerateSequences.cs" />
     <Compile Include="yieldReturn\Sequences.cs" />
+    <Compile Include="yieldReturn\ZipSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

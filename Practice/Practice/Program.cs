@@ -1184,6 +1184,12 @@ namespace Practice
         {
             GenerateSequences.GenerateSequencesMain();
         }
+        
+        //ZipSum
+        public static void Method85()
+        {
+            ZipSum.ZipSumMain();
+        }
 
         private static void Main()
         {
@@ -1249,7 +1255,7 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method84();
+            Method85();
             
             
             Console.ReadKey();
