@@ -54,3 +54,9 @@ E:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileIn
 E:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.csproj.CopyComplete
 E:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.exe
 E:\StudyPlace\Practice\Practice\Practice\obj\Debug\Practice.pdb
+E:\StudyPlace\Practice\Practice\Practice\bin\Debug\selenium-manager\linux\selenium-manager
+E:\StudyPlace\Practice\Practice\Practice\bin\Debug\selenium-manager\macos\selenium-manager
+E:\StudyPlace\Practice\Practice\Practice\bin\Debug\selenium-manager\windows\selenium-manager.exe
+E:\StudyPlace\Practice\Practice\Practice\bin\Debug\chromedriver.exe
+E:\StudyPlace\Practice\Practice\Practice\bin\Debug\WebDriver.dll
+E:\StudyPlace\Practice\Practice\Practice\bin\Debug\WebDriver.Support.dll

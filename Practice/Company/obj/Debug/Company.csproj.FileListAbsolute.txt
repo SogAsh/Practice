@@ -11,3 +11,9 @@ E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.SuggestedBindin
 E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.CoreCompileInputs.cache
 E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.exe
 E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.pdb
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\selenium-manager\linux\selenium-manager
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\selenium-manager\macos\selenium-manager
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\selenium-manager\windows\selenium-manager.exe
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\WebDriver.dll
+E:\StudyPlace\Practice\Practice\Company\bin\Debug\WebDriver.Support.dll
+E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.CopyComplete

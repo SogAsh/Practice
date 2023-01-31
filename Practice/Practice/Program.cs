@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using Practice.DataIntegrity;
 using Practice.Inheritance;
+using Practice.LINQ;
 using Practice.OOP;
 using Practice.QueuesStacksGenerics;
 using Practice.Training;
@@ -791,7 +792,7 @@ namespace Practice
             // Console.WriteLine(MaxMinAndIndex.MaxIndex(a));
             // Console.WriteLine(MaxMinAndIndex.MaxIndex(b));
             // Console.WriteLine(MaxMinAndIndex.MaxIndex(d));
-            
+
             // Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new int[0]));
             Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new[] { 3 }));
             Console.WriteLine(MaxIndexGeneralClass.MaxGeneralMethod(new[] { 3, 1, 2 }));
@@ -966,12 +967,14 @@ namespace Practice
                 Method57(i);
             }
         }
+
         //Исправить рекурсию https://ulearn.me/course/basicprogramming/Ispravit_rekursiyu_a5ba07a0-3b06-424b-989a-330137c1c05e
         public static void Method58()
         {
             var items = new[] { 'a', 'b', 'c' };
             FixRecursion.WriteReversed(items, 0);
         }
+
         //Задание №18: техники белого ящика https://ulearn.me/course/testdesign/Zadanie_18_tekhniki_belogo_yashchika_88ad9b85-8aa5-4b9f-942b-3a47ffcdd60c
         public static void Method59()
         {
@@ -983,6 +986,7 @@ namespace Practice
             {
                 x = 10;
             }
+
             if (B == 5)
             {
                 y = 10;
@@ -992,6 +996,7 @@ namespace Practice
                 y = 55;
             }
         }
+
         //ulearn Основы ООП https://ulearn.me/course/basicprogramming/Klassy_9eb68528-17cb-4d7f-99f3-40210a8f6cef
         public static void Method60()
         {
@@ -1026,13 +1031,13 @@ namespace Practice
         {
             DirectoryInfoAndFileInfo.NewMain3();
         }
-        
+
         //Постановка проблемы https://ulearn.me/course/basicprogramming/Postanovka_problemy_a969ed1f-fc3e-4dcc-8d05-6015069e3dcf
         public static void Method63()
         {
             BumbleSort.MakeBumbleSortMethod_WithNewMethod();
         }
-        
+
         //Склейка массивов https://ulearn.me/course/basicprogramming/Skleyka_massivov_3a0b67fc-73c1-498a-b015-7ccc06b7ffc9
         public static void Method64()
         {
@@ -1046,7 +1051,7 @@ namespace Practice
             CombineClass.Print(CombineClass.Combine(strings, strings));
             CombineClass.Print(CombineClass.Combine(ints, strings));
         }
-        
+
         //Снова среднее трех https://ulearn.me/course/basicprogramming/Snova_srednee_trekh_3dff4d01-45d2-4f80-889d-75ed651b31c2
         public static void Method65()
         {
@@ -1056,7 +1061,7 @@ namespace Practice
             Console.WriteLine(AverageOfThree.MiddleOfThree("B", "Z", "A"));
             Console.WriteLine(AverageOfThree.MiddleOfThree(3.45, 2.67, 3.12));
         }
-        
+
         //Поиск минимума https://ulearn.me/course/basicprogramming/Poisk_minimuma_9e6c6fe1-9282-4abc-853c-5ce6fb5bfa76?autoplay=true
         public static void Method66()
         {
@@ -1064,7 +1069,7 @@ namespace Practice
             Console.WriteLine(MaxMinAndIndex.MinGeneral(new[] { "B", "A", "C", "D" }));
             Console.WriteLine(MaxMinAndIndex.MinGeneral(new[] { '4', '2', '7' }));
         }
-        
+
         //Сравнение книг https://ulearn.me/course/basicprogramming/Sravnenie_knig_bd1f8054-a372-4ea4-9f5a-2eee97cd2b71
         // public static void Method67()
         // {
@@ -1077,7 +1082,7 @@ namespace Practice
             var ere = new Program33();
             ere.Main3();
         }
-        
+
         //Метод ToString https://ulearn.me/course/basicprogramming/Metod_ToString_910105f8-f895-4608-9134-8b8d42d68e41
         public static void Method69()
         {
@@ -1089,18 +1094,18 @@ namespace Practice
             };
             Console.WriteLine(triangle.ToString());
         }
-        
+
         public static void Method70()
         {
             Program32.Main33();
         }
-        
+
         //Отложенные ошибки https://ulearn.me/course/basicprogramming/Otlozhennye_oshibki_3bf0e956-3258-4a4d-ac42-926dc8cbad3b
         public static void Method71()
         {
             UnsafeProgram.Main2323();
         }
-        
+
         //Не откладывать ошибки https://ulearn.me/course/basicprogramming/Ne_otkladyvat_oshibki_9eb0e353-bb50-4ae0-9064-e8bb86dd33de
         public static void Method72()
         {
@@ -1108,28 +1113,28 @@ namespace Practice
             {
                 Name = "Иван"
             };
-            
+
             DontDelayMistakes.FormatStudent(_srudent);
         }
-        
+
         //Свойство вместо поля https://ulearn.me/course/basicprogramming/Svoystvo_vmesto_polya_3adad7ba-a462-49d5-8677-7d1f8c85af33
         public static void Method73()
         {
             PropertyInsteadOfField.Check1();
         }
-        
+
         //Конструкторы https://ulearn.me/course/basicprogramming/Konstruktory_87ee724d-8b7d-4d9e-b4f7-ea29c0f055ff
         public static void Method74()
         {
             Programs123.Maintest1();
         }
-        
+
         //Вектор https://ulearn.me/course/basicprogramming/vektor_6011b77e-b481-445d-9823-93e6a57fd757
         public static void Method75()
         {
             Vector.Check();
         }
-        
+
         //Дробь https://ulearn.me/course/basicprogramming/Drob__deeef0d7-5d5c-481a-9a07-480641705efe
         public static void Method76()
         {
@@ -1140,19 +1145,19 @@ namespace Practice
         {
             Task1.CountElements();
         }
-        
+
         //Стеки и очереди https://ulearn.me/course/basicprogramming2/Steki_i_ocheredi_48016626-87ae-411d-ae97-f7a49e465dbc
         public static void Method78()
         {
             Program123.Mian();
         }
-        
+
         //Очередь на связных списках https://ulearn.me/course/basicprogramming2/Ochered_na_svyaznykh_spiskakh_ee9122e3-6381-437d-9c6c-b8873bd5165f
         public static void Method79()
         {
             Program1234.Main1234();
         }
-        
+
         //Максимум в массиве https://ulearn.me/course/basicprogramming2/Maksimum_v_massive_e3f3c78d-8d68-40cb-8b1e-a1912396dbef
         public static void Method80()
         {
@@ -1161,34 +1166,56 @@ namespace Practice
             // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { 3, 1, 2 }));
             // Console.WriteLine(MaxIndexGeneralClass.Max(new[] { "A", "B", "C" }));
         }
-        
+
         //Методы расширения
         public static void Method82()
         {
             Program3.NewMain3();
         }
-        
+
         //foreach, IEnumerable и IEnumerator https://ulearn.me/course/basicprogramming2/foreach_IEnumerable_i_IEnumerator_49c485c2-d2a7-4362-a473-5757719bd002
         public static void Method81()
         {
             Programc1234Generic.Mainc1234();
         }
-        
+
         public static void Method83()
         {
             Program12345678.Main12345678();
         }
-        
+
         //Генерация последовательности
         public static void Method84()
         {
             GenerateSequences.GenerateSequencesMain();
         }
-        
+
         //ZipSum
         public static void Method85()
         {
             ZipSum.ZipSumMain();
+        }
+
+        //Чтение массива чисел
+        //https://ulearn.me/course/linq/Chtenie_massiva_chisel_cba7bc68-f1b9-46b1-93d4-49ac113a1d02?autoplay=true
+        public static void Method86()
+        {
+            ReadArrayOfNumbers.MainReadArrayOfNumbers();
+            ReadArrayOfNumbers.CheckoutException();
+        }
+
+        //Чтение списка точек
+        //https://ulearn.me/course/linq/Chtenie_spiska_tochek_563307c9-f265-4ea0-b06e-8390582f718e?autoplay=true
+        public static void Method87()
+        {
+            // ReadListPoints.MainReadListPoints();
+        }
+
+        //Запуск браузерного теста
+        public static void Method88()
+        {
+            var str = new ForTests();
+            str.Test();
         }
 
         private static void Main()
@@ -1255,9 +1282,9 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method85();
-            
-            
+            Method88();
+
+
             Console.ReadKey();
         }
     }

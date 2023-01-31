@@ -44,12 +44,19 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.4.8.0\lib\net47\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.4.8.0\lib\net47\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClass.cs" />
@@ -74,6 +81,7 @@
     <Compile Include="DataIntegrity\ReportData.cs" />
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="FixRecursion.cs" />
+    <Compile Include="ForTests.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="Inheritance\Book.cs" />
     <Compile Include="Inheritance\BumbleSort.cs" />
@@ -85,6 +93,8 @@
     <Compile Include="Inheritance\VirtualPoint.cs" />
     <Compile Include="KindEmploer.cs" />
     <Compile Include="LeapYear.cs" />
+    <Compile Include="LINQ\ReadArrayOfNumbers.cs" />
+    <Compile Include="LINQ\ReadListPoints.cs" />
     <Compile Include="MainQuestionUniverse.cs" />
     <Compile Include="MaxMinAndIndex.cs" />
     <Compile Include="MethodsWanted.cs" />
@@ -164,6 +174,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="cipher.txt" />
     <Content Include="citiesPopulation.txt" />
     <Content Include="StrangerAgainText.txt" />
@@ -177,5 +190,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\NUnit.3.13.2\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.13.2\build\NUnit.props'))" />
     <Error Condition="!Exists('..\packages\NUnit3TestAdapter.4.1.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.4.1.0\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.4.8.0\build\Selenium.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.4.8.0\build\Selenium.WebDriver.targets'))" />
   </Target>
+  <Import Project="..\packages\Selenium.WebDriver.4.8.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.8.0\build\Selenium.WebDriver.targets')" />
 </Project>
