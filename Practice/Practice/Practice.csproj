@@ -81,7 +81,6 @@
     <Compile Include="DataIntegrity\ReportData.cs" />
     <Compile Include="DeleteWhitespaces.cs" />
     <Compile Include="FixRecursion.cs" />
-    <Compile Include="ForTests.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="Inheritance\Book.cs" />
     <Compile Include="Inheritance\BumbleSort.cs" />
@@ -157,6 +156,7 @@
     <Compile Include="TheCourseOfQueen.cs" />
     <Compile Include="TicTacToe.cs" />
     <Compile Include="Training\Task1_Arrays.cs" />
+    <Compile Include="UI tests\WikipediaTests.cs" />
     <Compile Include="Univer.cs" />
     <Compile Include="UsefulAcquaintances.cs" />
     <Compile Include="Virtual2.cs" />

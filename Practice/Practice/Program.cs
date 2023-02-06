@@ -8,6 +8,7 @@ using Practice.LINQ;
 using Practice.OOP;
 using Practice.QueuesStacksGenerics;
 using Practice.Training;
+using Practice.UI_tests;
 using Practice.yieldReturn;
 
 namespace Practice
@@ -1214,7 +1215,7 @@ namespace Practice
         //Запуск браузерного теста
         public static void Method88()
         {
-            var str = new ForTests();
+            var str = new WikipediaTests();
             str.Test();
         }
 

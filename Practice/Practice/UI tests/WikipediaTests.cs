@@ -4,9 +4,9 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
-namespace Practice
+namespace Practice.UI_tests
 {
-    public class ForTests
+    public class WikipediaTests
     {
         private IWebDriver driver;
         private WebDriverWait wait;
@@ -22,7 +22,7 @@ namespace Practice
             //нужно прописать в тесте
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5); //неявное ожидание
             //То есть Selenium сам опрашивает элементы на видимость. Мы лишь установили насколько долго он это делает.
-            //для ожидания появления на странице
+            //для ожидания появления элемента на странице
             //не нужно прописать в тесте
         }
 
