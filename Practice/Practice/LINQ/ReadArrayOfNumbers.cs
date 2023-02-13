@@ -21,7 +21,9 @@ namespace Practice.LINQ
             //или так
             return lines.Where(x => x != "").Select(x => int.Parse(x)).ToArray();
         }
-
+        
+        //Method chaining
+        //https://ulearn.me/course/linq/Method_chaining_b7eda13d-77e5-40b6-b5a9-66775e900ea6
         public static void CheckoutException()
         {
             var people = new[]{"Pavel Egorov", "Yuriy Okulovskiy", 
@@ -36,6 +38,8 @@ namespace Practice.LINQ
             Assert.That(girls, Is.EqualTo(new[] {"Dasha", "Irina"}));
         }
 
+        //Чтение массива чисел
+        //https://ulearn.me/course/linq/Chtenie_massiva_chisel_cba7bc68-f1b9-46b1-93d4-49ac113a1d02?autoplay=true
         public static void MainReadArrayOfNumbers()
         {
             foreach (var num in ParseNumbers(new[] { "-0", "+0000" }))
@@ -43,6 +47,5 @@ namespace Practice.LINQ
             foreach (var num in ParseNumbers(new List<string> { "1", "", "-03", "0" }))
                 Console.WriteLine(num);
         }
-
     }
 }

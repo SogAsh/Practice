@@ -1209,7 +1209,7 @@ namespace Practice
         //https://ulearn.me/course/linq/Chtenie_spiska_tochek_563307c9-f265-4ea0-b06e-8390582f718e?autoplay=true
         public static void Method87()
         {
-            // ReadListPoints.MainReadListPoints();
+            ReadListPoints.MainReadListPoints();
         }
 
         //Запуск браузерного теста
