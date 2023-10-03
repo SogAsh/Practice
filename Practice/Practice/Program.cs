@@ -1283,8 +1283,8 @@ namespace Practice
             // PrintClass.PrintExtensions(1, "a");
             // PrintClass.PrintExtensions(true, "a", 1);
 
-            Method86();
-
+            // Method86();
+            Test.Meth();
 
             Console.ReadKey();
         }

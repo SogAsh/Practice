@@ -17,3 +17,16 @@ E:\StudyPlace\Practice\Practice\Company\bin\Debug\selenium-manager\windows\selen
 E:\StudyPlace\Practice\Practice\Company\bin\Debug\WebDriver.dll
 E:\StudyPlace\Practice\Practice\Company\bin\Debug\WebDriver.Support.dll
 E:\StudyPlace\Practice\Practice\Company\obj\Debug\Company.csproj.CopyComplete
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\selenium-manager\linux\selenium-manager
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\selenium-manager\macos\selenium-manager
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\Company.exe
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\Company.pdb
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\WebDriver.dll
+D:\Согдиан\Workspace\Practice\Practice\Company\bin\Debug\WebDriver.Support.dll
+D:\Согдиан\Workspace\Practice\Practice\Company\obj\Debug\Company.csproj.AssemblyReference.cache
+D:\Согдиан\Workspace\Practice\Practice\Company\obj\Debug\Company.csproj.SuggestedBindingRedirects.cache
+D:\Согдиан\Workspace\Practice\Practice\Company\obj\Debug\Company.csproj.CoreCompileInputs.cache
+D:\Согдиан\Workspace\Practice\Practice\Company\obj\Debug\Company.csproj.CopyComplete
+D:\Согдиан\Workspace\Practice\Practice\Company\obj\Debug\Company.exe
+D:\Согдиан\Workspace\Practice\Practice\Company\obj\Debug\Company.pdb
